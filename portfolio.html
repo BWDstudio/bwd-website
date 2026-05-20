@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio | Projekty stron internetowych — BWD</title>
+
+    <meta
+      name="description"
+      content="Portfolio nowoczesnych stron internetowych, landing page i projektów premium UI dopasowanych do różnych branż."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH -->
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Portfolio | Burzyk Web Design" />
+
+    <meta
+      property="og:description"
+      content="Portfolio nowoczesnych stron internetowych i projektów premium UI dopasowanych do różnych branż."
+    />
+
+    <meta property="og:image" content="https://b-w-d.pl/assets/og-cover.webp" />
+
+    <meta property="og:url" content="https://b-w-d.pl/portfolio.html" />
+
+    <link rel="canonical" href="https://b-w-d.pl/portfolio.html" />
+
+    <meta name="theme-color" content="#0f0f0f" />
+
+    <link rel="icon" type="image/png" href="./assets/ico.png" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/hero.css" />
+    <link rel="stylesheet" href="./style/portfolio.css" />
+    <link rel="stylesheet" href="./style/cta.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/cookies.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4DQYSGXKF8"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-4DQYSGXKF8");
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <div class="container navbar-container">
+        <a href="./index.html" class="logo">
+          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+        </a>
+
+        <nav class="nav-menu">
+          <a href="./index.html" class="nav-link"> Start </a>
+
+          <a href="./oferta.html" class="nav-link"> Oferta </a>
+
+          <a href="./portfolio.html" class="nav-link active"> Portfolio </a>
+
+          <a href="./o-mnie.html" class="nav-link"> O mnie </a>
+
+          <a href="./kontakt.html" class="nav-link"> Kontakt </a>
+        </nav>
+
+        <div class="navbar-actions">
+          <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Otwórz menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <div class="hero-badge">PORTFOLIO</div>
+
+          <h1>Projekty nowoczesnych stron internetowych.</h1>
+
+          <p class="hero-description">
+            Landing page, strony firmowe i nowoczesne projekty UI dopasowane do
+            różnych branż.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
+
+            <a href="./oferta.html" class="btn-secondary"> Zobacz ofertę </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP 01 — CLEAN / BEAUTY -->
+
+    <section class="portfolio-group section">
+      <div class="container">
+        <div class="portfolio-group-header reveal">
+          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
+
+          <h3>Usługi beauty.</h3>
+
+          <p>
+            Minimalistyczne projekty premium dla branży beauty i nowoczesnych
+            usług lokalnych.
+          </p>
+        </div>
+
+        <div class="portfolio-layout portfolio-layout-beauty">
+          <!-- LEFT -->
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="./assets/mockups/fryzjer.webp"
+                alt="Fryzjer"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag"> Fryzjer </span>
+
+              <h3>Strona dla salonu fryzjerskiego</h3>
+
+              <p>Minimalistyczny projekt dla Salonów fryzjerskich.</p>
+
+              <div class="project-meta">
+                <span class="project-category"> Beauty </span>
+
+                <span class="project-arrow"> ↗ </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CENTER POSTER -->
+
+          <article
+            class="project-card project-poster reveal"
+            data-full="./assets/mockups/barber.webp"
+            data-mobile="./assets/mockups/posters/barber-mobile.webp"
+          >
+            <img
+              src="./assets/mockups/posters/barber-mobile.webp"
+              alt="Barber Mobile"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="project-poster-overlay"></div>
+
+            <div class="project-poster-content">
+              <span class="project-tag"> Barber </span>
+
+              <h3>Landing page dla barbera</h3>
+
+              <p>Elegancki i nowoczesny projekt premium UI.</p>
+            </div>
+          </article>
+
+          <!-- RIGHT -->
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="./assets/mockups/uroda.webp"
+                alt="Salon urody"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag"> Salon urody </span>
+
+              <h3>Elegancki projekt dla salonów urody</h3>
+
+              <p>
+                Nowoczesny design podkreślający estetykę i profesjonalizm marki.
+              </p>
+
+              <div class="project-meta">
+                <span class="project-category"> Premium UI </span>
+
+                <span class="project-arrow"> ↗ </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP 02 — COLORFUL / WOW -->
+
+    <section class="portfolio-group portfolio-group-dark section">
+      <div class="container">
+        <div class="portfolio-group-header reveal">
+          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
+
+          <h3>Branże rozrywkowe, edukacyjne oraz żywieniowe.</h3>
+
+          <p>
+            Dynamiczne projekty z mocniejszym charakterem wizualnym i efektem
+            wow.
+          </p>
+        </div>
+
+        <div class="portfolio-layout portfolio-layout-creative">
+          <!-- LEFT COLUMN -->
+
+          <div class="portfolio-column">
+            <!-- SCHOOL -->
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="./assets/mockups/jezyki.webp"
+                  alt="Szkoła językowa"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag"> Szkoła językowa </span>
+
+                <h3>Nowoczesna platforma edukacyjna</h3>
+
+                <p>
+                  Projekt strony dla szkoły językowej online bądź stacjonarnej.
+                </p>
+
+                <div class="project-meta">
+                  <span class="project-category"> Edukacja </span>
+
+                  <span class="project-arrow"> ↗ </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ZAJECIA -->
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="./assets/mockups/zajecia.webp"
+                  alt="Zajęcia dodatkowe"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag"> Zajęcia dodatkowe </span>
+
+                <h3>Strona dla organizatorów zajęć i warsztatów</h3>
+
+                <p>
+                  Projekt skierowany do lokalnych organizatorów zajęć
+                  edukacyjnych i rozwojowych.
+                </p>
+
+                <div class="project-meta">
+                  <span class="project-category"> Lokalny biznes </span>
+
+                  <span class="project-arrow"> ↗ </span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- CENTER HERO -->
+
+          <article
+            class="project-card project-poster reveal"
+            data-full="./assets/mockups/fastfood.webp"
+            data-mobile="./assets/mockups/posters/fastfood-mobile.webp"
+          >
+            <img
+              src="./assets/mockups/posters/fastfood-mobile.webp"
+              alt="Fast Food Mobile"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="project-poster-overlay"></div>
+
+            <div class="project-poster-content">
+              <span class="project-tag"> Fast Food </span>
+
+              <h3>Dynamiczny landing page restauracji</h3>
+
+              <p>
+                Projekt strony dla nowoczesnego lokalu gastronomicznego lub
+                foodtrucka.
+              </p>
+
+              <div class="project-meta">
+                <span class="project-category"> Gastronomia </span>
+
+                <span class="project-arrow"> ↗ </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- RIGHT COLUMN -->
+
+          <div class="portfolio-column">
+            <!-- ANIMATORZY -->
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="./assets/mockups/animatorzy.webp"
+                  alt="Animatorzy"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag"> Animatorzy </span>
+
+                <h3>Kolorowy landing page dla animatorów</h3>
+
+                <p>
+                  Dynamiczna i rzucająca się w oczy strona dla branży
+                  rozrywkowej.
+                </p>
+
+                <div class="project-meta">
+                  <span class="project-category"> Eventy </span>
+
+                  <span class="project-arrow"> ↗ </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- SALA ZABAW -->
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="./assets/mockups/zabawa.webp"
+                  alt="Sala zabaw"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag"> Sala zabaw </span>
+
+                <h3>Przyciągająca wzrok strona dla sal zabaw</h3>
+
+                <p>
+                  Nowoczesny projekt dla sali zabaw dla dzieci z efektem "WOW".
+                </p>
+
+                <div class="project-meta">
+                  <span class="project-category"> E-wizytówka </span>
+
+                  <span class="project-arrow"> ↗ </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GROUP 03 — PROFESSIONAL -->
+
+    <section class="portfolio-group section">
+      <div class="container">
+        <div class="portfolio-group-header reveal">
+          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
+
+          <h3>Nowoczesne i wzbudzające zaufanie klienta.</h3>
+
+          <p>
+            Przejrzyste projekty stworzone z myślą o profesjonalnym wizerunku i
+            wysokiej konwersji.
+          </p>
+        </div>
+
+        <div class="portfolio-layout portfolio-layout-professional">
+          <!-- LEFT POSTER -->
+
+          <article
+            class="project-card project-poster reveal"
+            data-full="./assets/mockups/mechanik.webp"
+            data-mobile="./assets/mockups/posters/mechanik-mobile.webp"
+          >
+            <img
+              src="./assets/mockups/posters/mechanik-mobile.webp"
+              alt="Mechanik Mobile"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="project-poster-overlay"></div>
+
+            <div class="project-poster-content">
+              <span class="project-tag"> Mechanik </span>
+
+              <h3>Wzbudzający zaufanie auto serwis</h3>
+
+              <p>
+                Responsywny projekt strony dla warsztatu samochodowego premium.
+              </p>
+
+              <div class="project-meta">
+                <span class="project-category"> Strona firmowa </span>
+
+                <span class="project-arrow"> ↗ </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CENTER -->
+
+          <div class="portfolio-center-stack">
+            <!-- STOMATOLOG -->
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="./assets/mockups/stomatolog.webp"
+                  alt="Stomatolog"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag"> Stomatolog </span>
+
+                <h3>Przejrzysta strona gabinetu stomatologicznego</h3>
+
+                <p>
+                  Profesjonalny projekt budujący zaufanie i nowoczesny
+                  wizerunek.
+                </p>
+
+                <div class="project-meta">
+                  <span class="project-category"> Medycyna </span>
+
+                  <span class="project-arrow"> ↗ </span>
+                </div>
+              </div>
+            </article>
+
+            <!-- KANCELARIA -->
+
+            <article class="project-card reveal">
+              <div class="project-image">
+                <img
+                  src="./assets/mockups/prawnik.webp"
+                  alt="Kancelaria prawna"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <span class="project-tag"> Kancelaria prawna </span>
+
+                <h3>Elegancka strona kancelarii prawnej</h3>
+
+                <p>
+                  Minimalistyczny projekt podkreślający profesjonalizm i
+                  wiarygodność marki.
+                </p>
+
+                <div class="project-meta">
+                  <span class="project-category"> Prawo </span>
+
+                  <span class="project-arrow"> ↗ </span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- RIGHT POSTER -->
+
+          <article
+            class="project-card project-poster reveal"
+            data-full="./assets/mockups/remonty.webp"
+            data-mobile="./assets/mockups/posters/remonty-mobile.webp"
+          >
+            <img
+              src="./assets/mockups/posters/remonty-mobile.webp"
+              alt="Firma remontowa Mobile"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <div class="project-poster-overlay"></div>
+
+            <div class="project-poster-content">
+              <span class="project-tag"> Firma remontowa </span>
+
+              <h3>Strona dla usług remontowo-budowlanych</h3>
+
+              <p>
+                Dynamiczny projekt dla nowoczesnej firmy remontowej i
+                budowlanej.
+              </p>
+
+              <div class="project-meta">
+                <span class="project-category"> Usługi </span>
+
+                <span class="project-arrow"> ↗ </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY PROJECTS -->
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag"> PODEJŚCIE </span>
+
+          <h2>
+            Każdy projekt tworzony jest z myślą o nowoczesnym doświadczeniu
+            użytkownika.
+          </h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="project-card reveal">
+            <div class="project-content">
+              <h3>Premium design</h3>
+
+              <p>
+                Minimalistyczne, nowoczesne projekty dopasowane do branży i
+                charakteru marki, które utkwią w pamięci klienta.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-content">
+              <h3>Responsywność</h3>
+
+              <p>
+                Każda strona wygląda dobrze zarówno na desktopie, jak i
+                urządzeniach mobilnych, aby poprawić doświadczenia każdego
+                użytkownika.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-content">
+              <h3>Wydajność</h3>
+
+              <p>Dbałość o szybkość działania, płynność i nowoczesny UX.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <span class="section-tag"> WSPÓŁPRACA </span>
+
+          <h2>Podoba Ci się któryś z projektów? A może masz własny pomysł?</h2>
+
+          <p>
+            Odezwij się! Stworzymy nowoczesny projekt, który wyróżni Twoją markę
+            w internecie.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
+
+            <a href="./oferta.html" class="btn-secondary"> Oferta </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand reveal">
+          <div class="footer-logo">
+            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+          </div>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+
+          <a href="tel:+48605721600"> +48 605 721 600 </a>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <p class="footer-description">
+          Nowoczesne strony internetowe dla firm i biznesu.
+        </p>
+
+        <div class="footer-legal">
+          <a href="./polityka-prywatnosci.html">
+            Polityka prywatności i cookies
+          </a>
+        </div>
+
+        <p class="footer-copyright">
+          © 2026 Burzyk Web Design. Wszystkie prawa zastrzeżone.
+        </p>
+      </div>
+    </footer>
+
+    <!-- PORTFOLIO MODAL -->
+
+    <div class="portfolio-modal">
+      <button class="modal-close" aria-label="Zamknij podgląd projektu">
+        ✕
+      </button>
+
+      <div class="modal-content">
+        <img src="" alt="Portfolio Preview" class="modal-image" />
+      </div>
+    </div>
+
+    <!-- FLOATING CTA -->
+
+    <a href="./kontakt.html" class="floating-cta">
+      Wycena <span class="floating-cta-close"> × </span></a
+    >
+
+    <!-- COOKIE BANNER -->
+
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <p>
+          Ta strona wykorzystuje pliki cookies w celu poprawnego działania oraz
+          analizy ruchu na stronie.
+        </p>
+
+        <div class="cookie-buttons">
+          <button type="button" class="btn-secondary" id="cookieReject">
+            Odrzuć
+          </button>
+
+          <button type="button" class="btn-primary" id="cookieAccept">
+            Akceptuję
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+
+    <script src="./js/app.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/responsive-portfolio.js"></script>
+    <script src="./js/cookies.js"></script>
+  </body>
+</html>

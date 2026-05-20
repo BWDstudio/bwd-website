@@ -1,0 +1,70 @@
+/* COOKIE BANNER */
+
+.cookie-banner {
+  position: fixed;
+
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+
+  z-index: 10000;
+
+  display: flex;
+  justify-content: center;
+
+  pointer-events: none;
+}
+
+/* COOKIE CONTENT */
+
+.cookie-content {
+  width: min(100%, 860px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  padding: 1.4rem 1.6rem;
+
+  border: 1px solid var(--border-white);
+
+  border-radius: var(--radius-lg);
+
+  background: var(--glass-dark);
+
+  backdrop-filter:
+  blur(var(--blur-glass));
+
+  box-shadow:
+    0 16px 40px rgba(0,0,0,0.22);
+
+  pointer-events: auto;
+}
+
+/* TEXT */
+
+.cookie-content p {
+  color: rgba(255,255,255,0.82);
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+
+.cookie-buttons {
+  display: flex;
+
+  gap: 1rem;
+
+  flex-shrink: 0;
+}
+
+/* HIDDEN */
+
+.cookie-banner.hidden {
+  display: none;
+}

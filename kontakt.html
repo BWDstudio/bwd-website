@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kontakt | Darmowa wycena strony internetowej — BWD</title>
+
+    <meta
+      name="description"
+      content="Skontaktuj się i otrzymaj darmową wycenę nowoczesnej strony internetowej dopasowanej do Twojej marki i biznesu."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- OPEN GRAPH -->
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="Kontakt | Burzyk Web Design" />
+
+    <meta
+      property="og:description"
+      content="Skontaktuj się i otrzymaj darmową wycenę nowoczesnej strony internetowej."
+    />
+
+    <meta property="og:image" content="https://b-w-d.pl/assets/og-cover.webp" />
+
+    <meta property="og:url" content="https://b-w-d.pl/kontakt.html" />
+
+    <link rel="canonical" href="https://b-w-d.pl/kontakt.html" />
+
+    <meta name="theme-color" content="#0f0f0f" />
+
+    <link rel="icon" type="image/png" href="./assets/ico.png" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./style/global.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/hero.css" />
+    <link rel="stylesheet" href="./style/cta.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/cookies.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4DQYSGXKF8"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-4DQYSGXKF8");
+    </script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <div class="container navbar-container">
+        <a href="./index.html" class="logo">
+          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+        </a>
+
+        <nav class="nav-menu">
+          <a href="./index.html" class="nav-link"> Start </a>
+
+          <a href="./oferta.html" class="nav-link"> Oferta </a>
+
+          <a href="./portfolio.html" class="nav-link"> Portfolio </a>
+
+          <a href="./o-mnie.html" class="nav-link"> O mnie </a>
+
+          <a href="./kontakt.html" class="nav-link active"> Kontakt </a>
+        </nav>
+
+        <div class="navbar-actions">
+          <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="Otwórz menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <div class="hero-badge">KONTAKT</div>
+
+          <h1>Porozmawiajmy o Twojej stronie internetowej.</h1>
+
+          <p class="hero-description">
+            Masz pomysł na nową stronę, landing page lub redesign istniejącego
+            serwisu? Napisz wiadomość — odpowiem i przygotuję wstępną wycenę
+            projektu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact section">
+      <div class="container contact-layout">
+        <!-- LEFT -->
+
+        <div class="contact-info reveal">
+          <span class="section-tag">FORMULARZ KONTAKTOWY</span>
+
+          <h2>Skontaktuj się i opowiedz o swoim projekcie.</h2>
+
+          <p>
+            Najczęściej odpowiadam w ciągu 24 godzin. Im więcej szczegółów
+            podasz, tym łatwiej będzie przygotować dokładną wycenę i kierunek
+            projektu.
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+
+            <a href="tel:+48605721600"> +48 605 721 600 </a>
+          </div>
+        </div>
+
+        <!-- FORM -->
+
+        <div class="contact-form-wrapper reveal">
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xaqvrwbd"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nowa wiadomość z formularza BWD"
+            />
+
+            <div class="form-group">
+              <label for="name"> Imię / firma </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Twoja Nazwa"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email"> Adres e-mail </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="kontakt@email.pl"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="project"> Typ projektu </label>
+
+              <select id="project" name="project">
+                <option value="">Wybierz opcję</option>
+
+                <option value="landing-page">Landing Page</option>
+
+                <option value="website">Strona firmowa</option>
+
+                <option value="portfolio">Portfolio</option>
+
+                <option value="redesign">Redesign strony</option>
+
+                <option value="other">Inny projekt</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message"> Opis projektu </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Opisz swój projekt, branżę, inspiracje lub funkcje, które mają znaleźć się na stronie."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-full">
+              Wyślij wiadomość
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <span class="section-tag"> BURZYK WEB DESIGN </span>
+
+          <h2>Nowoczesne strony internetowe dla nowoczesnych marek.</h2>
+
+          <p>Premium design, przejrzysty UX i dopracowane detale.</p>
+
+          <div class="cta-buttons">
+            <a href="./portfolio.html" class="btn-primary">
+              Zobacz portfolio
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer" id="kontakt">
+      <div class="container footer-content">
+        <div class="footer-brand reveal">
+          <div class="footer-logo">
+            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+          </div>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+
+          <a href="tel:+48605721600"> +48 605 721 600 </a>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <p class="footer-description">
+          Nowoczesne strony internetowe dla firm i biznesu.
+        </p>
+
+        <div class="footer-legal">
+          <a href="./polityka-prywatnosci.html">
+            Polityka prywatności i cookies
+          </a>
+        </div>
+
+        <p class="footer-copyright">
+          © 2026 Burzyk Web Design. Wszystkie prawa zastrzeżone.
+        </p>
+      </div>
+    </footer>
+
+    <!-- FLOATING CTA -->
+
+    <a href="mailto:kontakt@b-w-d.pl" class="floating-cta">
+      Wycena
+      <span class="floating-cta-close"> × </span>
+    </a>
+
+    <!-- COOKIE BANNER -->
+
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <p>
+          Ta strona wykorzystuje pliki cookies w celu poprawnego działania oraz
+          analizy ruchu na stronie.
+        </p>
+
+        <div class="cookie-buttons">
+          <button type="button" class="btn-secondary" id="cookieReject">
+            Odrzuć
+          </button>
+
+          <button type="button" class="btn-primary" id="cookieAccept">
+            Akceptuję
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- JS -->
+
+    <script>
+      const form = document.querySelector(".contact-form");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const data = new FormData(form);
+
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          gtag("event", "generate_lead", {
+            event_category: "contact_form",
+            event_label: "kontakt_formularz",
+          });
+          window.location.href = "/dziekujemy.html";
+        }
+      });
+    </script>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/cookies.js"></script>
+  </body>
+</html>

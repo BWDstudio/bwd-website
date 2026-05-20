@@ -1,0 +1,206 @@
+/* FOOTER */
+
+.footer {
+  position: relative;
+
+  padding: 120px 0 60px;
+
+  background: var(--text);
+
+  overflow: hidden;
+}
+
+/* FOOTER CONTENT */
+
+.footer-content {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    1fr
+    auto;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+  margin-top: 80px;
+
+  padding-top: 32px;
+
+  border-top:
+    1px solid var(--border-white);
+
+  text-align: center;
+}
+
+/* FOOTER DESCRIPTION */
+
+.footer-description {
+  max-width: 640px;
+
+  margin:
+    0 auto 20px;
+
+  color:
+    var(--text-white-muted);
+
+  font-size:
+    clamp(0.9rem, 1.4vw, 1.1rem);
+
+  line-height: 1.8;
+}
+
+/* COPYRIGHT */
+
+.footer-copyright {
+  color:
+    var(--text-white-light);
+
+  font-size: clamp(0.72rem, 1.1vw, 0.95rem);
+}
+
+/* FOOTER LOGO */
+
+.footer-logo img {
+  width: clamp(260px, 18vw, 340px);
+
+  height: auto;
+
+  display: block;
+}
+
+/* FOOTER CONTACT */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 18px;
+}
+
+/* FOOTER CONTACT LINK */
+
+.footer-contact a {
+  position: relative;
+
+  width: fit-content;
+
+  color: var(--white);
+
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+/* FOOTER CONTACT UNDERLINE */
+
+.footer-contact a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: var(--primary);
+
+  transition: var(--transition);
+}
+
+.footer-contact a:hover {
+  color: var(--primary);
+}
+
+.footer-contact a:hover::after {
+  width: 100%;
+}
+
+/* FOOTER GLOW*/
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: -100px;
+  right: -100px;
+
+  width: 400px;
+  height: 400px;
+
+  background: var(--primary-glow-soft);
+
+  border-radius: 50%;
+
+  filter:
+  blur(var(--blur-glow-lg));
+}
+
+/* COPYRIGHT */
+
+.footer-bottom p {
+  color: var(--text-white-light);
+
+  font-size: 0.95rem;
+}
+
+/* FOOTER LEGAL */
+
+.footer-legal {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1.2rem;
+}
+
+.footer-legal a {
+  color: var(--text-white-muted);
+
+  font-size: 0.95rem;
+
+  transition: var(--transition);
+}
+
+.footer-legal a:hover {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+
+  .footer-content {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 40px;
+  }
+
+  .footer-contact {
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .footer-contact a {
+    width: 100%;
+
+    text-align: center;
+  }
+
+}

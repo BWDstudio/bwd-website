@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://b-w-d.pl/sitemap.xml

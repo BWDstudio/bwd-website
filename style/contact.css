@@ -1,0 +1,174 @@
+/* CONTACT LAYOUT */
+
+.contact-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px, 0.9fr)
+    minmax(420px, 1fr);
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+/* CONTACT INFO */
+
+.contact-info h2 {
+  margin-bottom: 1.8rem;
+
+  font-size: clamp(2.4rem, 4vw, 4.4rem);
+
+  line-height: 1.05;
+}
+
+.contact-info p {
+  max-width: 520px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+}
+
+/* CONTACT DETAILS */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.4rem;
+
+  margin-top: 3rem;
+}
+
+.contact-details a {
+  width: fit-content;
+
+  color: var(--text);
+
+  font-size: 1.15rem;
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.contact-details a:hover {
+  color: var(--primary);
+
+  transform: translateX(2px);
+}
+
+/* CONTACT FORM WRAPPER */
+
+.contact-form-wrapper {
+  padding: 3rem;
+
+  border-radius: 2.4rem;
+
+  background: var(--white);
+
+  border: 1px solid var(--border-light);
+
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.05);
+}
+
+/* CONTACT FORM */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.8rem;
+}
+
+/* FORM GROUP */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.9rem;
+}
+
+/* LABELS */
+
+.form-group label {
+  color: var(--text);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* INPUTS */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+
+  padding: 1.1rem 1.3rem;
+
+  border: 1px solid var(--border-light);
+
+  border-radius: 1.4rem;
+
+  background: var(--input-bg);
+
+  color: var(--text);
+
+  font-family: "Satoshi", sans-serif;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: var(--transition);
+}
+
+/* TEXTAREA */
+
+.contact-form textarea {
+  resize: vertical;
+
+  min-height: 180px;
+}
+
+/* SELECT*/
+
+.contact-form select {
+  cursor: pointer;
+
+  appearance: none;
+}
+
+/* PLACEHOLDERS */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(17,17,17,0.5);
+}
+
+/* FOCUS STATES */
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color:
+    rgba(72,99,56,0.35);
+
+  background: var(--white);
+
+  box-shadow:
+    0 0 0 4px rgba(72,99,56,0.08);
+}
+
+/* SUBMIT BUTTON */
+
+.contact-form .btn-primary {
+  margin-top: 0.5rem;
+}
+
+.contact {
+  background: var(--white);
+}
