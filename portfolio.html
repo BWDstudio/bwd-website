@@ -111,7 +111,8 @@
 
           <p class="hero-description">
             Landing page, strony firmowe i nowoczesne projekty UI dopasowane do
-            różnych branż.
+            różnych branż. LP dla Barbera i Strona fastfood są dostępne w
+            wersjach demo do sprawdzenia UI oraz UX, reszta projektów wkrótce!
           </p>
 
           <div class="hero-buttons">
@@ -169,9 +170,13 @@
           <!-- CENTER POSTER -->
 
           <article
-            class="project-card project-poster reveal"
+            class="project-card project-poster reveal cursor-pointer demo-link"
             data-full="./assets/mockups/barber.webp"
             data-mobile="./assets/mockups/posters/barber-mobile.webp"
+            onclick="
+              event.stopPropagation();
+              window.open('/demo/barber/', '_blank');
+            "
           >
             <img
               src="./assets/mockups/posters/barber-mobile.webp"
@@ -183,11 +188,22 @@
             <div class="project-poster-overlay"></div>
 
             <div class="project-poster-content">
-              <span class="project-tag"> Barber </span>
+              <span class="project-tag">Barber</span>
+
+              <div class="live-demo-badge">
+                LIVE DEMO
+
+                <span class="live-demo-tooltip">
+                  Kliknij aby otworzyć działające demo
+                </span>
+              </div>
 
               <h3>Landing page dla barbera</h3>
 
-              <p>Elegancki i nowoczesny projekt premium UI.</p>
+              <p>
+                KLIKNIJ aby zobaczyć koncept strony z ograniczoną
+                funkcjonalnością.
+              </p>
             </div>
           </article>
 
@@ -305,9 +321,13 @@
           <!-- CENTER HERO -->
 
           <article
-            class="project-card project-poster reveal"
+            class="project-card project-poster reveal cursor-pointer demo-link"
             data-full="./assets/mockups/fastfood.webp"
             data-mobile="./assets/mockups/posters/fastfood-mobile.webp"
+            onclick="
+              event.stopPropagation();
+              window.open('/demo/foodtruck/', '_blank');
+            "
           >
             <img
               src="./assets/mockups/posters/fastfood-mobile.webp"
@@ -321,11 +341,19 @@
             <div class="project-poster-content">
               <span class="project-tag"> Fast Food </span>
 
+              <div class="live-demo-badge">
+                LIVE DEMO
+
+                <span class="live-demo-tooltip">
+                  Kliknij aby otworzyć działające demo
+                </span>
+              </div>
+
               <h3>Dynamiczny landing page restauracji</h3>
 
               <p>
-                Projekt strony dla nowoczesnego lokalu gastronomicznego lub
-                foodtrucka.
+                KLIKNIJ aby zobaczyć koncept strony z ograniczoną
+                funkcjonalnością.
               </p>
 
               <div class="project-meta">
@@ -341,7 +369,11 @@
           <div class="portfolio-column">
             <!-- ANIMATORZY -->
 
-            <article class="project-card reveal">
+            <article
+              class="project-card animator-demo reveal cursor-pointer"
+              data-demo="true"
+              onclick="window.open('/demo/animatorzy/', '_blank')"
+            >
               <div class="project-image">
                 <img
                   src="./assets/mockups/animatorzy.webp"
@@ -352,7 +384,16 @@
               </div>
 
               <div class="project-content">
-                <span class="project-tag"> Animatorzy </span>
+                <div class="project-top-row">
+                  <span class="project-tag"> Animatorzy </span>
+
+                  <div class="live-demo-badge">
+                    LIVE DEMO
+                    <span class="live-demo-tooltip">
+                      Kliknij aby otworzyć działające demo
+                    </span>
+                  </div>
+                </div>
 
                 <h3>Kolorowy landing page dla animatorów</h3>
 

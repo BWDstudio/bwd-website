@@ -640,6 +640,37 @@
 
 }
 
+@media (max-width: 768px) {
+  .live-demo-badge {
+    padding: 0.7rem 1.2rem;
+
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+
+    margin-inline: auto;
+
+    color: #111 !important;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+
+    backdrop-filter: blur(14px);
+  }
+
+  .live-demo-badge::before {
+    width: 7px;
+    height: 7px;
+  }
+
+  .live-demo-tooltip {
+    display: none;
+  }
+}
+
 /* SMALL MOBILE 576px */
 
 @media (max-width: 576px) {

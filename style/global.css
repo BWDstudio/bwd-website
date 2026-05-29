@@ -430,11 +430,11 @@ p {
 .reveal {
   opacity: 0;
 
-  transform: translateY(40px);
+  transform: translateY(120px);
 
   transition:
-    opacity 0.55s cubic-bezier(.4,0,.2,1),
-    transform 0.55s cubic-bezier(.4,0,.2,1);
+  opacity 1s cubic-bezier(.22,1,.36,1),
+  transform 1s cubic-bezier(.22,1,.36,1);
 }
 
 .reveal.active {
@@ -687,8 +687,6 @@ p {
     box-shadow 0.45s ease,
     transform 0.45s ease;
 
-    transform: translateZ(0);
-
   backface-visibility: hidden;
 
   will-change: transform;
@@ -708,6 +706,10 @@ p {
     0 0 0 1px rgba(255,255,255,0.02);
 }
 
+.project-card.reveal {
+  will-change: transform, opacity;
+}
+
 .project-card,
 .project-poster {
   cursor: pointer;
@@ -725,8 +727,8 @@ p {
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
-
+  display: block;
+  object-fit: contain;
   transition:
     transform 0.45s ease,
     filter 0.35s ease;
@@ -840,7 +842,7 @@ p {
 
   backface-visibility: hidden;
 
-  transform: translateZ(0);
+  background: #000;
 }
 
 .project-poster img {
@@ -851,10 +853,10 @@ p {
   width: 100%;
   height: auto;
 
-  min-height: 100%;
-
-  object-fit: cover;
+  object-fit: contain;
   object-position: center top;
+
+  background: #000;
 
   transition: transform 0.45s ease;
 
@@ -862,9 +864,7 @@ p {
 
   backface-visibility: hidden;
 
-  transform:
-    translateZ(0)
-    scale(clamp(1, 0.35vw + 0.9, 1.28));
+  transform: translateZ(0);
 }
 
 .project-poster:hover img {
@@ -992,6 +992,15 @@ p {
   .project-poster {
     min-height: 620px;
   }
+}
+
+@media (max-width: 1100px) {
+
+  .portfolio-layout-creative .project-poster {
+    aspect-ratio: auto;
+    min-height: auto;
+  }
+
 }
 
 @media (max-width: 768px) {

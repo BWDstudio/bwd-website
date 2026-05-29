@@ -28,6 +28,13 @@ projectCards.forEach((card) => {
 
   card.addEventListener("click", () => {
 
+    if (
+  card.classList.contains("demo-link") ||
+  card.dataset.demo === "true"
+) {
+  return;
+}
+
     const image =
   card.dataset.full ||
   card.querySelector("img").src;

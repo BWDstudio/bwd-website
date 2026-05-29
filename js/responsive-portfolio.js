@@ -12,6 +12,10 @@ const updatePosterImages = () => {
 
   posterCards.forEach((card) => {
 
+  if (card.dataset.demo === "true") {
+    return;
+  }
+
     const image =
       card.querySelector("img");
 

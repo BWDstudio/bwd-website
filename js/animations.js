@@ -247,25 +247,79 @@ document.addEventListener(
   }
 );
 
-// FLOATING CTA FOLLOW
+// =========================
+// FLOATING CTA CLOSE
+// =========================
 
-const floatingClose =
-  document.querySelector(
-    ".floating-cta-close"
-  );
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
 
-if (floatingClose && floatingCTA) {
+    const floatingCTA =
+      document.querySelector(
+        ".floating-cta"
+      );
 
-  floatingClose.addEventListener(
-    "click",
-    (e) => {
+    const floatingClose =
+      document.querySelector(
+        ".floating-cta-close"
+      );
 
-      e.preventDefault();
+    if (!floatingCTA) return;
+
+    // NIE pokazuj na stronie kontaktu
+
+    if (
+      window.location.pathname.includes(
+        "kontakt"
+      )
+    ) {
 
       floatingCTA.style.display =
         "none";
 
+      return;
     }
-  );
 
-}
+    // Jeśli wcześniej zamknięto
+
+    const isClosed =
+      localStorage.getItem(
+        "floatingCtaClosed"
+      );
+
+    if (isClosed === "true") {
+
+      floatingCTA.style.display =
+        "none";
+
+      return;
+    }
+
+    // Zamknięcie CTA
+
+    if (floatingClose) {
+
+      floatingClose.addEventListener(
+        "click",
+        (e) => {
+
+          e.preventDefault();
+
+          e.stopPropagation();
+
+          localStorage.setItem(
+            "floatingCtaClosed",
+            "true"
+          );
+
+          floatingCTA.style.display =
+            "none";
+
+        }
+      );
+
+    }
+
+  }
+);
