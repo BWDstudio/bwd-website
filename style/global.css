@@ -189,7 +189,7 @@ ul {
 
   /* CONTAINER */
 
-  --container: 1680px;
+  --container: 1400px;
 
   /* SPACING */
 
@@ -257,7 +257,7 @@ p {
 
   margin-inline: auto;
 
-  padding-inline: 16px;
+  padding-inline: 32px;
 }
 
 /* BUTTONS */
@@ -969,6 +969,169 @@ p {
 
 .portfolio-center-stack .project-image {
   aspect-ratio: 16 / 10;
+}
+
+/* CENY */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.pricing-card {
+  position: relative;
+
+  min-height: 560px;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 28px;
+
+  transition: .3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(255,255,255,.18);
+}
+
+.pricing-card.featured {
+  border-color: var(--accent);
+}
+
+.pricing-type {
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+
+  opacity: 1;
+
+  margin-bottom: 1rem;
+}
+
+.pricing-price {
+  align-self: flex-end;
+
+  color: var(--text);
+
+  font-size: 1.4rem;
+  font-weight: 800;
+
+  margin-bottom: 3rem;
+}
+
+.pricing-price strong {
+  display: block;
+
+  font-size: 3.5rem;
+
+  line-height: 1;
+
+  font-weight: 800;
+}
+
+.pricing-card p {
+  margin-bottom: auto;
+
+  line-height: 1.7;
+}
+
+.pricing-price {
+  align-self: flex-end;
+
+  text-align: right;
+
+  margin-bottom: 3rem;
+}
+
+.pricing-title {
+  font-size: 2rem;
+
+  margin-bottom: 1.25rem;
+}
+
+.pricing-pill {
+  align-self: flex-start;
+
+  padding: 14px 24px;
+
+  border-radius: 999px;
+
+  font-size: .85rem;
+  font-weight: 700;
+
+  position: relative;
+
+  transform: translateX(-18px);
+}
+
+.pricing-lp {
+  border: 2px solid #22c55e;
+}
+
+.pricing-business {
+  border: 2px solid #f59e0b;
+}
+
+.pricing-premium {
+  border: 2px solid #ef4444;
+}
+
+.pricing-lp-pill {
+  background: rgba(34,197,94,.12);
+  color: #22c55e;
+  border: 2px solid #22c55e;
+}
+
+.pricing-business-pill {
+  background: rgba(245,158,11,.12);
+  color: #f59e0b;
+  border: 2px solid #f59e0b;
+}
+
+.pricing-premium-pill {
+  background: rgba(239,68,68,.12);
+  color: #ef4444;
+  border: 2px solid #ef4444;
+}
+
+.pricing-lp .pricing-price::before {
+  background: rgba(34,197,94,.15);
+}
+
+.pricing-business .pricing-price::before {
+  background: rgba(249,115,22,.15);
+}
+
+.pricing-premium .pricing-price::before {
+  background: rgba(239,68,68,.15);
+}
+
+.pricing-lp .pricing-price {
+  color: #22c55e;
+}
+
+.pricing-business .pricing-price {
+  color: #f59e0b;
+}
+
+.pricing-premium .pricing-price {
+  color: #ef4444;
+}
+
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* MOBILE */

@@ -156,3 +156,157 @@
 
   background: var(--primary-soft-hover);
 }
+
+/* PRICING */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.pricing-card {
+  position: relative;
+
+  padding: 4rem 3rem 3rem;
+
+  border-radius: 28px;
+
+  background: white;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--accent);
+  transform: scale(1.03);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pricing-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.pricing-price {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.pricing-price span {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--heading);
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.pricing-card li {
+  margin-bottom: 0.8rem;
+  color: var(--text);
+}
+
+.pricing-cta {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 4rem;
+}
+
+@media (max-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-card.featured {
+    transform: none;
+  }
+}
+
+/* PILLS */
+
+.pricing-top {
+  position: absolute;
+
+  top: -18px;
+  left: 24px;
+  right: 24px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--heading);
+}
+.pricing-pill {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.45rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.pricing-pill-accent {
+  background: rgba(249,115,22,.12);
+  color: #ea580c;
+}
+
+.pricing-price-pill {
+  background: rgba(249,115,22,.12);
+  color: #ea580c;
+}
+
+.pricing-price-lp,
+.pricing-price-business,
+.pricing-price-premium {
+  position: absolute;
+
+  top: -20px;
+  right: 24px;
+
+  padding: 0.75rem 1.25rem;
+
+  border-radius: 999px;
+
+  font-weight: 700;
+
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.pricing-top {
+  margin-bottom: 2rem;
+}
