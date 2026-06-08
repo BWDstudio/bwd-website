@@ -96,7 +96,7 @@
   position: relative;
 
   padding-left: 26px;
-
+  text-align: left;
   color: var(--text);
 
   font-weight: 500;

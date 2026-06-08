@@ -173,7 +173,7 @@
 
   width: clamp(140px, 14vw, 190px);
 
-  overflow: visible;
+  overflow: hidden;
 
   border: 8px solid var(--white);
   border-radius: var(--radius-xl);
