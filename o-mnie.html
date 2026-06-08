@@ -48,6 +48,10 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -74,7 +78,12 @@
     <header class="navbar">
       <div class="container navbar-container">
         <a href="./index.html" class="logo">
-          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img class="logo-light" src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img
+            class="logo-dark"
+            src="./assets/logos/B-W-D.png"
+            alt="BWD Logo"
+          />
         </a>
 
         <nav class="nav-menu">
@@ -90,6 +99,7 @@
         </nav>
 
         <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle">🌙</button>
           <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
         </div>
 
@@ -103,29 +113,82 @@
 
     <!-- HERO -->
 
-    <section class="hero">
-      <div class="container hero-content">
+    <!-- HERO -->
+
+    <section class="hero page-hero">
+      <div class="container">
         <div class="hero-text reveal">
-          <div class="hero-badge">BURZYK WEB DESIGN</div>
+          <div class="hero-badge">POZNAJMY SIĘ</div>
 
           <h1>
-            Projektuję nowoczesne strony internetowe dla marek, które chcą
-            wyglądać profesjonalnie.
+            Po latach pracy zawodowej postanowiłem w pełni poświęcić się swojej
+            pasji.
           </h1>
 
           <p class="hero-description">
-            Tworzę nowoczesne strony internetowe premium — od landing page po
-            bardziej rozbudowane strony firmowe. Łączę estetykę, przejrzysty UX
-            i wydajność, tworząc projekty, które dobrze wyglądają i pomagają
-            budować profesjonalny wizerunek marki.
+            Łączę doświadczenie w obsłudze klienta, sprzedaży i zarządzaniu z
+            nowoczesnym Web Developmentem, pomagając firmom budować ich
+            wirtualne wizytówki.
           </p>
+        </div>
+      </div>
+    </section>
 
-          <div class="hero-buttons">
-            <a href="./portfolio.html" class="btn-primary">
-              Zobacz portfolio
-            </a>
+    <!-- ABOUT -->
 
-            <a href="./kontakt.html" class="btn-secondary"> Skontaktuj się </a>
+    <section class="about section">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-image">
+            <span class="section-tag"> O MNIE </span>
+            <img src="./assets/mockups/artur.webp" alt="Artur Burzała" />
+          </div>
+
+          <div class="about-content">
+            <h2>
+              Strona internetowa powinna nie tylko dobrze wyglądać, ale przede
+              wszystkim wspierać rozwój biznesu.
+            </h2>
+
+            <p>
+              Web Development to dla mnie nie tylko pasja, ale przede wszystkim
+              możliwość ciągłego doskonalenia swoich umiejętności. Regularnie
+              poznaję nowe technologie, śledzę trendy i doskonalę swój warsztat,
+              aby tworzyć strony, które są nowoczesne, szybkie i przyciągające
+              uwagę.
+            </p>
+
+            <p>
+              Przez ponad 12 lat pracowałem w obszarze obsługi klienta i
+              sprzedaży. Dzięki temu doskonale rozumiem, jak ważna jest dobra
+              komunikacja, terminowość i partnerska współpraca. Wiem również, że
+              za każdą firmą stoi człowiek, który chce rozwijać swój biznes i
+              potrzebuje do tego odpowiednich narzędzi.
+            </p>
+
+            <p>
+              Tworząc strony internetowe, stawiam nie tylko na estetykę i
+              technologię, ale również na realną wartość dla klienta. Zależy mi,
+              aby współpraca była prosta, przejrzysta i pozbawiona zbędnego
+              technicznego żargonu.
+            </p>
+
+            <div class="about-stats">
+              <div class="about-stat">
+                <span>14+</span>
+                <p>lat doświadczenia w zarządzaniu</p>
+              </div>
+
+              <div class="about-stat">
+                <span>12+</span>
+                <p>lat pracy z klientem</p>
+              </div>
+
+              <div class="about-stat">
+                <span>100+</span>
+                <p>osób w zarządzanych zespołach</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -139,7 +202,7 @@
           <span class="section-tag"> PODEJŚCIE </span>
 
           <h2>
-            Strony internetowe powinny wyglądać premium i działać bez
+            Strony internetowe powinny wyglądać dobrze i działać bez
             kompromisów.
           </h2>
 
@@ -235,7 +298,7 @@
         <div class="portfolio-group-header reveal">
           <span class="portfolio-group-label"> DLACZEGO BWD </span>
 
-          <h3>Bez szablonów. Bez przypadkowych rozwiązań.</h3>
+          <h3>Bez przypadkowych rozwiązań.</h3>
 
           <p>
             Każdy projekt powstaje indywidualnie — z naciskiem na estetykę,
@@ -292,14 +355,47 @@
       <div class="container footer-content">
         <div class="footer-brand reveal">
           <div class="footer-logo">
-            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+            <img
+              class="footer-logo-light"
+              src="./assets/logos/B-W-D.png"
+              alt="BWD Logo"
+            />
+            <img
+              class="footer-logo-dark"
+              src="./assets/logos/BWD.png"
+              alt="BWD Logo"
+            />
           </div>
         </div>
 
-        <div class="footer-contact reveal">
-          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+        <div class="footer-socials">
+          <a
+            href="https://linkedin.com/in/artur-burzala"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-          <a href="tel:+48605721600"> +48 605 721 600 </a>
+          <a
+            href="https://www.facebook.com/burzykwebdesign"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>kontakt@b-w-d.pl</span>
+          </a>
+
+          <a href="tel:+48605721600" class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+48 605 721 600</span>
+          </a>
         </div>
       </div>
 
