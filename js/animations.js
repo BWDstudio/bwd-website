@@ -124,52 +124,6 @@ if (
 }
 
 // =========================
-// MAGNETIC BUTTONS
-// =========================
-
-const magneticButtons =
-  document.querySelectorAll(
-    ".btn-primary, .btn-secondary"
-  );
-
-if (!prefersReducedMotion) {
-
-  magneticButtons.forEach((button) => {
-
-    button.addEventListener(
-      "mousemove",
-      (e) => {
-
-        const rect =
-          button.getBoundingClientRect();
-
-        const x =
-          e.clientX - rect.left - rect.width / 2;
-
-        const y =
-          e.clientY - rect.top - rect.height / 2;
-
-        button.style.transform =
-          `translate(${x * 0.15}px, ${y * 0.25}px)`;
-
-      }
-    );
-
-    button.addEventListener(
-      "mouseleave",
-      () => {
-
-        button.style.transform =
-          "translate(0px, 0px)";
-
-      }
-    );
-
-  });
-
-}
-
-// =========================
 // FLOATING CTA FOLLOW
 // =========================
 

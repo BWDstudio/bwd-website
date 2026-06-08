@@ -47,6 +47,10 @@
     <link rel="stylesheet" href="./style/contact.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -73,7 +77,12 @@
     <header class="navbar">
       <div class="container navbar-container">
         <a href="./index.html" class="logo">
-          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img class="logo-light" src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img
+            class="logo-dark"
+            src="./assets/logos/B-W-D.png"
+            alt="BWD Logo"
+          />
         </a>
 
         <nav class="nav-menu">
@@ -89,6 +98,7 @@
         </nav>
 
         <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle">🌙</button>
           <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
         </div>
 
@@ -107,8 +117,8 @@
         <div class="hero-text reveal">
           <div class="hero-badge">KONTAKT</div>
 
-          <h1>Porozmawiajmy o Twojej stronie internetowej.</h1>
-
+          <h1>Wybrałeś już swoją wizytówkę?</h1>
+          <h1>Odezwij się.</h1>
           <p class="hero-description">
             Masz pomysł na nową stronę, landing page lub redesign istniejącego
             serwisu? Napisz wiadomość — odpowiem i przygotuję wstępną wycenę
@@ -136,9 +146,36 @@
           </p>
 
           <div class="contact-details">
-            <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+            <a href="mailto:kontakt@b-w-d.pl" class="contact-detail-item">
+              <i class="fa-solid fa-envelope"></i>
 
-            <a href="tel:+48605721600"> +48 605 721 600 </a>
+              <div>
+                <span>E-mail</span>
+                <strong>kontakt@b-w-d.pl</strong>
+              </div>
+            </a>
+
+            <a href="tel:+48605721600" class="contact-detail-item">
+              <i class="fa-solid fa-phone"></i>
+
+              <div>
+                <span>Telefon</span>
+                <strong>+48 605 721 600</strong>
+              </div>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/artur-burzala"
+              target="_blank"
+              class="contact-detail-item"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+
+              <div>
+                <span>LinkedIn</span>
+                <strong>Połączmy się</strong>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -225,9 +262,12 @@
         <div class="cta-box reveal">
           <span class="section-tag"> BURZYK WEB DESIGN </span>
 
-          <h2>Nowoczesne strony internetowe dla nowoczesnych marek.</h2>
+          <h2>Wybrałeś już swój styl?</h2>
 
-          <p>Premium design, przejrzysty UX i dopracowane detale.</p>
+          <p>
+            Premium design, przejrzysty UX i dopracowane detale + Twój
+            indywidualny styl!
+          </p>
 
           <div class="cta-buttons">
             <a href="./portfolio.html" class="btn-primary">
@@ -244,14 +284,47 @@
       <div class="container footer-content">
         <div class="footer-brand reveal">
           <div class="footer-logo">
-            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+            <img
+              class="footer-logo-light"
+              src="./assets/logos/B-W-D.png"
+              alt="BWD Logo"
+            />
+            <img
+              class="footer-logo-dark"
+              src="./assets/logos/BWD.png"
+              alt="BWD Logo"
+            />
           </div>
         </div>
 
-        <div class="footer-contact reveal">
-          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+        <div class="footer-socials">
+          <a
+            href="https://linkedin.com/in/artur-burzala"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-          <a href="tel:+48605721600"> +48 605 721 600 </a>
+          <a
+            href="https://www.facebook.com/burzykwebdesign"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>kontakt@b-w-d.pl</span>
+          </a>
+
+          <a href="tel:+48605721600" class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+48 605 721 600</span>
+          </a>
         </div>
       </div>
 

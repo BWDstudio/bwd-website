@@ -47,6 +47,10 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -73,7 +77,12 @@
     <header class="navbar">
       <div class="container navbar-container">
         <a href="./index.html" class="logo">
-          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img class="logo-light" src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img
+            class="logo-dark"
+            src="./assets/logos/B-W-D.png"
+            alt="BWD Logo"
+          />
         </a>
 
         <nav class="nav-menu">
@@ -89,6 +98,7 @@
         </nav>
 
         <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle">🌙</button>
           <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
         </div>
 
@@ -107,12 +117,12 @@
         <div class="hero-text reveal">
           <div class="hero-badge">PORTFOLIO</div>
 
-          <h1>Projekty nowoczesnych stron internetowych.</h1>
+          <h1>Projekty budowane od podstaw.</h1>
 
           <p class="hero-description">
             Landing page, strony firmowe i nowoczesne projekty UI dopasowane do
-            różnych branż. LP dla Barbera i Strona fastfood są dostępne w
-            wersjach demo do sprawdzenia UI oraz UX, reszta projektów wkrótce!
+            różnych branż. Poniżej znajdziecie moje realizacje, oraz propozycje
+            projektów z wersjami demo do przetestowania funkcjonalności.
           </p>
 
           <div class="hero-buttons">
@@ -124,73 +134,118 @@
       </div>
     </section>
 
-    <!-- GROUP 01 — CLEAN / BEAUTY -->
+    <!-- REALIZACJE -->
 
-    <section class="portfolio-group section">
+    <section class="portfolio section">
       <div class="container">
         <div class="portfolio-group-header reveal">
-          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
+          <span class="portfolio-group-label"> MOJE REALIZACJE </span>
 
-          <h3>Usługi beauty.</h3>
+          <h3>Zrealizowane projekty.</h3>
 
           <p>
-            Minimalistyczne projekty premium dla branży beauty i nowoczesnych
-            usług lokalnych.
+            W tej sekcji będę zamieszczał wyłącznie projekty które zostały
+            ukończone i wdrożone. Chcesz aby Twoja strona pojawiła się w moim
+            portfolio? Odezwij się, a otrzymasz stronę na bardzo preferencyjnych
+            warunkach!
           </p>
         </div>
 
-        <div class="portfolio-layout portfolio-layout-beauty">
-          <!-- LEFT -->
+        <!-- PROJECTS -->
+
+        <div class="portfolio-grid">
+          <!-- SZTUKI -->
+
+          <a
+            href="https://sztuki.art"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link"
+          >
+            <article class="project-card reveal demo-link">
+              <div class="project-image">
+                <span class="project-status status-online"> ONLINE </span>
+
+                <img
+                  src="./assets/mockups/sztuki.webp"
+                  alt="PRACOWNIA SZTUKI"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-tag"> PRACOWNIA SZTUKI </span>
+                </div>
+
+                <h3>Pierwsza realizacja online.</h3>
+
+                <p>
+                  Nowoczesna strona internetowa dla pracowni artystycznej.
+                  Projekt obejmował indywidualny design, galerię, formularz
+                  kontaktowy, SEO oraz pełną optymalizację mobilną.
+                </p>
+              </div>
+            </article>
+          </a>
+
+          <!-- AGROTURYSTYKA -->
 
           <article class="project-card reveal">
             <div class="project-image">
+              <span class="project-status status-progress"> W REALIZACJI </span>
+
               <img
-                src="./assets/mockups/fryzjer.webp"
-                alt="Fryzjer"
+                src="./assets/mockups/agroturystyka.webp"
+                alt="Agroturystyka"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
             <div class="project-content">
-              <span class="project-tag"> Fryzjer </span>
-
-              <h3>Strona dla salonu fryzjerskiego</h3>
-
-              <p>Minimalistyczny projekt dla Salonów fryzjerskich.</p>
-
               <div class="project-meta">
-                <span class="project-category"> Beauty </span>
-
-                <span class="project-arrow"> ↗ </span>
+                <span class="project-tag"> AGROTURYSTYKA </span>
               </div>
+
+              <h3>Nowoczesna strona dla obiektu noclegowego.</h3>
+
+              <p>
+                Projekt w trakcie realizacji. Strona będzie prezentować ofertę
+                noclegową, atrakcje oraz możliwość kontaktu z właścicielem.
+              </p>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- DEMOS -->
+
+    <section class="portfolio-group section">
+      <div class="container">
+        <div class="portfolio-group-header reveal">
+          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
+
+          <h3>Projekty LIVE demo</h3>
+
+          <p>
+            Poniżej moje realizacje demo do zaadaptowania dla Twojej firmy -
+            nowe realizacje będą dodawane na bieżąco. Każdy z projektów jest w
+            100% edytowalny, więc jeśli coś Ci nie odpowiada można to poprawić!
+          </p>
+        </div>
+
+        <div class="portfolio-layout portfolio-layout-beauty">
           <!-- CENTER POSTER -->
 
           <article
-            class="project-card project-poster reveal cursor-pointer demo-link"
-            data-full="./assets/mockups/barber.webp"
-            data-mobile="./assets/mockups/posters/barber-mobile.webp"
-            onclick="
-              event.stopPropagation();
-              window.open('/demo/barber/', '_blank');
-            "
+            class="project-card cursor-pointer demo-link"
+            onclick="window.open('/demo/barber/', '_blank')"
           >
-            <img
-              src="./assets/mockups/posters/barber-mobile.webp"
-              alt="Barber Mobile"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="project-poster-overlay"></div>
-
-            <div class="project-poster-content">
-              <span class="project-tag">Barber</span>
-
-              <div class="live-demo-badge">
+            <div class="project-image">
+              <div class="project-status status-demo">
                 LIVE DEMO
 
                 <span class="live-demo-tooltip">
@@ -198,150 +253,34 @@
                 </span>
               </div>
 
-              <h3>Landing page dla barbera</h3>
-
-              <p>
-                KLIKNIJ aby zobaczyć koncept strony z ograniczoną
-                funkcjonalnością.
-              </p>
-            </div>
-          </article>
-
-          <!-- RIGHT -->
-
-          <article class="project-card reveal">
-            <div class="project-image">
               <img
-                src="./assets/mockups/uroda.webp"
-                alt="Salon urody"
+                src="./assets/mockups/posters/barber-mobile.webp"
+                alt="Barber"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
             <div class="project-content">
-              <span class="project-tag"> Salon urody </span>
+              <span class="project-tag">Barber</span>
 
-              <h3>Elegancki projekt dla salonów urody</h3>
+              <h3>Landing page dla barbera</h3>
 
-              <p>
-                Nowoczesny design podkreślający estetykę i profesjonalizm marki.
-              </p>
-
-              <div class="project-meta">
-                <span class="project-category"> Premium UI </span>
-
-                <span class="project-arrow"> ↗ </span>
-              </div>
+              <p>Kliknij aby zobaczyć działające demo projektu.</p>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GROUP 02 — COLORFUL / WOW -->
-
-    <section class="portfolio-group portfolio-group-dark section">
-      <div class="container">
-        <div class="portfolio-group-header reveal">
-          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
-
-          <h3>Branże rozrywkowe, edukacyjne oraz żywieniowe.</h3>
-
-          <p>
-            Dynamiczne projekty z mocniejszym charakterem wizualnym i efektem
-            wow.
-          </p>
-        </div>
-
-        <div class="portfolio-layout portfolio-layout-creative">
-          <!-- LEFT COLUMN -->
-
-          <div class="portfolio-column">
-            <!-- SCHOOL -->
-
-            <article class="project-card reveal">
-              <div class="project-image">
-                <img
-                  src="./assets/mockups/jezyki.webp"
-                  alt="Szkoła językowa"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <div class="project-content">
-                <span class="project-tag"> Szkoła językowa </span>
-
-                <h3>Nowoczesna platforma edukacyjna</h3>
-
-                <p>
-                  Projekt strony dla szkoły językowej online bądź stacjonarnej.
-                </p>
-
-                <div class="project-meta">
-                  <span class="project-category"> Edukacja </span>
-
-                  <span class="project-arrow"> ↗ </span>
-                </div>
-              </div>
-            </article>
-
-            <!-- ZAJECIA -->
-
-            <article class="project-card reveal">
-              <div class="project-image">
-                <img
-                  src="./assets/mockups/zajecia.webp"
-                  alt="Zajęcia dodatkowe"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <div class="project-content">
-                <span class="project-tag"> Zajęcia dodatkowe </span>
-
-                <h3>Strona dla organizatorów zajęć i warsztatów</h3>
-
-                <p>
-                  Projekt skierowany do lokalnych organizatorów zajęć
-                  edukacyjnych i rozwojowych.
-                </p>
-
-                <div class="project-meta">
-                  <span class="project-category"> Lokalny biznes </span>
-
-                  <span class="project-arrow"> ↗ </span>
-                </div>
-              </div>
-            </article>
-          </div>
 
           <!-- CENTER HERO -->
 
           <article
-            class="project-card project-poster reveal cursor-pointer demo-link"
-            data-full="./assets/mockups/fastfood.webp"
-            data-mobile="./assets/mockups/posters/fastfood-mobile.webp"
+            class="project-card cursor-pointer demo-link"
             onclick="
               event.stopPropagation();
               window.open('/demo/foodtruck/', '_blank');
             "
           >
-            <img
-              src="./assets/mockups/posters/fastfood-mobile.webp"
-              alt="Fast Food Mobile"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="project-poster-overlay"></div>
-
-            <div class="project-poster-content">
-              <span class="project-tag"> Fast Food </span>
-
-              <div class="live-demo-badge">
+            <div class="project-image">
+              <div class="project-status status-demo">
                 LIVE DEMO
 
                 <span class="live-demo-tooltip">
@@ -349,244 +288,56 @@
                 </span>
               </div>
 
+              <img
+                src="./assets/mockups/fastfood.webp"
+                alt="Fast Food"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="project-content">
+              <span class="project-tag">Fast Food</span>
+
               <h3>Dynamiczny landing page restauracji</h3>
 
               <p>
-                KLIKNIJ aby zobaczyć koncept strony z ograniczoną
-                funkcjonalnością.
+                Kliknij aby zobaczyć działające demo projektu i sprawdzić jego
+                wygląd oraz funkcjonalność.
               </p>
-
-              <div class="project-meta">
-                <span class="project-category"> Gastronomia </span>
-
-                <span class="project-arrow"> ↗ </span>
-              </div>
             </div>
           </article>
 
-          <!-- RIGHT COLUMN -->
-
-          <div class="portfolio-column">
-            <!-- ANIMATORZY -->
-
-            <article
-              class="project-card animator-demo reveal cursor-pointer"
-              data-demo="true"
-              onclick="window.open('/demo/animatorzy/', '_blank')"
-            >
-              <div class="project-image">
-                <img
-                  src="./assets/mockups/animatorzy.webp"
-                  alt="Animatorzy"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <div class="project-content">
-                <div class="project-top-row">
-                  <span class="project-tag"> Animatorzy </span>
-
-                  <div class="live-demo-badge">
-                    LIVE DEMO
-                    <span class="live-demo-tooltip">
-                      Kliknij aby otworzyć działające demo
-                    </span>
-                  </div>
-                </div>
-
-                <h3>Kolorowy landing page dla animatorów</h3>
-
-                <p>
-                  Dynamiczna i rzucająca się w oczy strona dla branży
-                  rozrywkowej.
-                </p>
-
-                <div class="project-meta">
-                  <span class="project-category"> Eventy </span>
-
-                  <span class="project-arrow"> ↗ </span>
-                </div>
-              </div>
-            </article>
-
-            <!-- SALA ZABAW -->
-
-            <article class="project-card reveal">
-              <div class="project-image">
-                <img
-                  src="./assets/mockups/zabawa.webp"
-                  alt="Sala zabaw"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <div class="project-content">
-                <span class="project-tag"> Sala zabaw </span>
-
-                <h3>Przyciągająca wzrok strona dla sal zabaw</h3>
-
-                <p>
-                  Nowoczesny projekt dla sali zabaw dla dzieci z efektem "WOW".
-                </p>
-
-                <div class="project-meta">
-                  <span class="project-category"> E-wizytówka </span>
-
-                  <span class="project-arrow"> ↗ </span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GROUP 03 — PROFESSIONAL -->
-
-    <section class="portfolio-group section">
-      <div class="container">
-        <div class="portfolio-group-header reveal">
-          <span class="portfolio-group-label"> PRZYKŁADY PROJEKTÓW </span>
-
-          <h3>Nowoczesne i wzbudzające zaufanie klienta.</h3>
-
-          <p>
-            Przejrzyste projekty stworzone z myślą o profesjonalnym wizerunku i
-            wysokiej konwersji.
-          </p>
-        </div>
-
-        <div class="portfolio-layout portfolio-layout-professional">
-          <!-- LEFT POSTER -->
+          <!-- ANIMATORZY -->
 
           <article
-            class="project-card project-poster reveal"
-            data-full="./assets/mockups/mechanik.webp"
-            data-mobile="./assets/mockups/posters/mechanik-mobile.webp"
+            class="project-card cursor-pointer demo-link"
+            onclick="window.open('/demo/animatorzy/', '_blank')"
           >
-            <img
-              src="./assets/mockups/posters/mechanik-mobile.webp"
-              alt="Mechanik Mobile"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="project-poster-overlay"></div>
-
-            <div class="project-poster-content">
-              <span class="project-tag"> Mechanik </span>
-
-              <h3>Wzbudzający zaufanie auto serwis</h3>
-
-              <p>
-                Responsywny projekt strony dla warsztatu samochodowego premium.
-              </p>
-
-              <div class="project-meta">
-                <span class="project-category"> Strona firmowa </span>
-
-                <span class="project-arrow"> ↗ </span>
+            <div class="project-image">
+              <div class="project-status status-demo">
+                LIVE DEMO
+                <span class="live-demo-tooltip">
+                  Kliknij aby otworzyć działające demo
+                </span>
               </div>
+
+              <img
+                src="./assets/mockups/animatorzy.webp"
+                alt="Animatorzy"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
-          </article>
 
-          <!-- CENTER -->
+            <div class="project-content">
+              <span class="project-tag">Animatorzy</span>
 
-          <div class="portfolio-center-stack">
-            <!-- STOMATOLOG -->
-
-            <article class="project-card reveal">
-              <div class="project-image">
-                <img
-                  src="./assets/mockups/stomatolog.webp"
-                  alt="Stomatolog"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <div class="project-content">
-                <span class="project-tag"> Stomatolog </span>
-
-                <h3>Przejrzysta strona gabinetu stomatologicznego</h3>
-
-                <p>
-                  Profesjonalny projekt budujący zaufanie i nowoczesny
-                  wizerunek.
-                </p>
-
-                <div class="project-meta">
-                  <span class="project-category"> Medycyna </span>
-
-                  <span class="project-arrow"> ↗ </span>
-                </div>
-              </div>
-            </article>
-
-            <!-- KANCELARIA -->
-
-            <article class="project-card reveal">
-              <div class="project-image">
-                <img
-                  src="./assets/mockups/prawnik.webp"
-                  alt="Kancelaria prawna"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-
-              <div class="project-content">
-                <span class="project-tag"> Kancelaria prawna </span>
-
-                <h3>Elegancka strona kancelarii prawnej</h3>
-
-                <p>
-                  Minimalistyczny projekt podkreślający profesjonalizm i
-                  wiarygodność marki.
-                </p>
-
-                <div class="project-meta">
-                  <span class="project-category"> Prawo </span>
-
-                  <span class="project-arrow"> ↗ </span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <!-- RIGHT POSTER -->
-
-          <article
-            class="project-card project-poster reveal"
-            data-full="./assets/mockups/remonty.webp"
-            data-mobile="./assets/mockups/posters/remonty-mobile.webp"
-          >
-            <img
-              src="./assets/mockups/posters/remonty-mobile.webp"
-              alt="Firma remontowa Mobile"
-              loading="lazy"
-              decoding="async"
-            />
-
-            <div class="project-poster-overlay"></div>
-
-            <div class="project-poster-content">
-              <span class="project-tag"> Firma remontowa </span>
-
-              <h3>Strona dla usług remontowo-budowlanych</h3>
+              <h3>Kolorowy landing page dla animatorów</h3>
 
               <p>
-                Dynamiczny projekt dla nowoczesnej firmy remontowej i
-                budowlanej.
+                Dynamiczna i rzucająca się w oczy strona dla branży rozrywkowej.
               </p>
-
-              <div class="project-meta">
-                <span class="project-category"> Usługi </span>
-
-                <span class="project-arrow"> ↗ </span>
-              </div>
             </div>
           </article>
         </div>
@@ -595,15 +346,12 @@
 
     <!-- WHY PROJECTS -->
 
-    <section class="section">
+    <section class="section portfolio-group">
       <div class="container">
         <div class="section-header reveal">
           <span class="section-tag"> PODEJŚCIE </span>
 
-          <h2>
-            Każdy projekt tworzony jest z myślą o nowoczesnym doświadczeniu
-            użytkownika.
-          </h2>
+          <h2>Każdy projekt tworzę z myślą o doświadczeniu użytkownika.</h2>
         </div>
 
         <div class="portfolio-grid">
@@ -632,9 +380,12 @@
 
           <div class="project-card reveal">
             <div class="project-content">
-              <h3>Wydajność</h3>
+              <h3>Indywidualizm</h3>
 
-              <p>Dbałość o szybkość działania, płynność i nowoczesny UX.</p>
+              <p>
+                Do każdego projektu podchodzę indywidualnie, chcesz konkretnych
+                funkcji? Porozmawiajmy o tym.
+              </p>
             </div>
           </div>
         </div>
@@ -648,7 +399,7 @@
         <div class="cta-box reveal">
           <span class="section-tag"> WSPÓŁPRACA </span>
 
-          <h2>Podoba Ci się któryś z projektów? A może masz własny pomysł?</h2>
+          <h2>Podoba Ci się któryś z projektów?</h2>
 
           <p>
             Odezwij się! Stworzymy nowoczesny projekt, który wyróżni Twoją markę
@@ -666,18 +417,51 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="footer" id="kontakt">
       <div class="container footer-content">
         <div class="footer-brand reveal">
           <div class="footer-logo">
-            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+            <img
+              class="footer-logo-light"
+              src="./assets/logos/B-W-D.png"
+              alt="BWD Logo"
+            />
+            <img
+              class="footer-logo-dark"
+              src="./assets/logos/BWD.png"
+              alt="BWD Logo"
+            />
           </div>
         </div>
 
-        <div class="footer-contact reveal">
-          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+        <div class="footer-socials">
+          <a
+            href="https://linkedin.com/in/artur-burzala"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-          <a href="tel:+48605721600"> +48 605 721 600 </a>
+          <a
+            href="https://www.facebook.com/burzykwebdesign"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>kontakt@b-w-d.pl</span>
+          </a>
+
+          <a href="tel:+48605721600" class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+48 605 721 600</span>
+          </a>
         </div>
       </div>
 

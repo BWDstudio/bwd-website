@@ -49,6 +49,10 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -151,18 +155,51 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="footer" id="kontakt">
       <div class="container footer-content">
         <div class="footer-brand reveal">
           <div class="footer-logo">
-            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+            <img
+              class="footer-logo-light"
+              src="./assets/logos/B-W-D.png"
+              alt="BWD Logo"
+            />
+            <img
+              class="footer-logo-dark"
+              src="./assets/logos/BWD.png"
+              alt="BWD Logo"
+            />
           </div>
         </div>
 
-        <div class="footer-contact reveal">
-          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+        <div class="footer-socials">
+          <a
+            href="https://linkedin.com/in/artur-burzala"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-          <a href="tel:+48605721600"> +48 605 721 600 </a>
+          <a
+            href="https://www.facebook.com/burzykwebdesign"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>kontakt@b-w-d.pl</span>
+          </a>
+
+          <a href="tel:+48605721600" class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+48 605 721 600</span>
+          </a>
         </div>
       </div>
 

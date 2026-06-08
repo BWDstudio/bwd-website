@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Burzyk Web Design | Nowoczesne strony internetowe premium</title>
+    <title>Burzyk Web Design | Nowoczesne strony internetowe</title>
 
     <meta
       name="description"
@@ -20,12 +20,12 @@
 
     <meta
       property="og:title"
-      content="Burzyk Web Design | Nowoczesne strony internetowe premium"
+      content="Burzyk Web Design | Nowoczesne strony internetowe"
     />
 
     <meta
       property="og:description"
-      content="Nowoczesne strony internetowe, landing page i projekty premium UI dla firm i marek."
+      content="Nowoczesne strony internetowe, landing page i projekty premium UI dla firm i lokalnego biznesu."
     />
 
     <meta property="og:image" content="https://b-w-d.pl/assets/og-cover.webp" />
@@ -52,6 +52,10 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Google tag (gtag.js) -->
 
@@ -79,7 +83,12 @@
     <header class="navbar">
       <div class="container navbar-container">
         <a href="./index.html" class="logo">
-          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img class="logo-light" src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img
+            class="logo-dark"
+            src="./assets/logos/B-W-D.png"
+            alt="BWD Logo"
+          />
         </a>
 
         <nav class="nav-menu">
@@ -95,6 +104,7 @@
         </nav>
 
         <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle">🌙</button>
           <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
         </div>
 
@@ -113,9 +123,7 @@
         <div class="hero-text reveal">
           <div class="hero-badge">NOWOCZESNE STRONY INTERNETOWE</div>
 
-          <h1>
-            Projektuję strony, które budują zaufanie i przyciągają klientów.
-          </h1>
+          <h1>Projektuję strony, które są ładne, szybkie i funkcjonalne.</h1>
 
           <p class="hero-description">
             Tworzę nowoczesne, szybkie i responsywne strony internetowe dla
@@ -178,7 +186,7 @@
         <div class="section-header reveal">
           <span class="section-tag"> OFERTA </span>
 
-          <h2>Tworzę strony które działają szybko i na każdym urządzeniu.</h2>
+          <h2>Razem stworzymy stronę z której będziesz zadowolony.</h2>
 
           <p>
             Każdy projekt jest dopasowany do branży, klientów i Twoich
@@ -221,7 +229,7 @@
 
               <li>Wydajność</li>
 
-              <li>Core Web Vitals</li>
+              <li>Optymalizacja pod AI</li>
 
               <li>Optymalizacja mobilna</li>
             </ul>
@@ -257,74 +265,70 @@
         <div class="section-header reveal">
           <span class="section-tag"> PORTFOLIO </span>
 
-          <h2>Projekty dopasowane do różnych branż.</h2>
+          <h2>Moje pierwsze realizacje dla klientów.</h2>
 
-          <p>Nowoczesne landing page, strony firmowe i projekty premium UI.</p>
+          <p>
+            Poniżej będę zamieszczał ukończone strony moich klientów. Sprawdź
+            jak moje strony działają po wdrożeniu na ftp klienta.
+          </p>
         </div>
 
         <div class="portfolio-grid">
           <!-- PROJECT -->
 
-          <article class="project-card reveal">
+          <a
+            href="https://sztuki.art"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link project-card reveal demo-link"
+          >
             <div class="project-image">
+              <span class="project-status status-online"> ONLINE </span>
               <img
-                src="./assets/mockups/barber.webp"
-                alt="Barber"
+                src="./assets/mockups/sztuki.webp"
+                alt="PRACOWNIA SZTUKI"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
             <div class="project-content">
-              <span class="project-tag"> Barber </span>
-
-              <h3>Nowoczesny landing page dla usług</h3>
-
-              <p>Elegancki projekt strony dla salonu barberskiego.</p>
-            </div>
-          </article>
-
-          <!-- PROJECT -->
-
-          <article class="project-card reveal">
-            <div class="project-image">
-              <img
-                src="./assets/mockups/mechanik.webp"
-                alt="Mechanik"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-
-            <div class="project-content">
-              <span class="project-tag"> Mechanik </span>
-
-              <h3>Premium auto serwis</h3>
+              <div class="project-meta">
+                <span class="project-tag"> PRACOWNIA SZTUKI </span>
+              </div>
+              <h3>Pierwsza realizacja online.</h3>
 
               <p>
-                Responsywny projekt dla nowoczesnego warsztatu samochodowego.
+                Nowoczesna strona internetowa dla pracowni artystycznej.Projekt
+                obejmował indywidualny design, galerię, formularz kontaktowy,
+                SEO oraz pełną optymalizację mobilną.
               </p>
             </div>
-          </article>
-
+          </a>
           <!-- PROJECT -->
 
           <article class="project-card reveal">
             <div class="project-image">
+              <span class="project-status status-progress"> W REALIZACJI </span>
+
               <img
-                src="./assets/mockups/zabawa.webp"
-                alt="Sala zabaw"
+                src="./assets/mockups/agroturystyka.webp"
+                alt="Agroturystyka"
                 loading="lazy"
                 decoding="async"
               />
             </div>
-
             <div class="project-content">
-              <span class="project-tag"> Sala zabaw </span>
+              <div class="project-meta">
+                <span class="project-tag"> AGROTURYSTYKA </span>
+              </div>
 
-              <h3>Sala zabaw dla dzieci</h3>
+              <h3>Nowoczesna strona dla obiektu noclegowego.</h3>
 
-              <p>Dynamiczny projekt dla właścicieli sal zabaw.</p>
+              <p>
+                Projekt w trakcie realizacji. Strona będzie prezentować ofertę
+                noclegową, atrakcje oraz możliwość kontaktu z właścicielem.
+              </p>
             </div>
           </article>
         </div>
@@ -416,14 +420,47 @@
       <div class="container footer-content">
         <div class="footer-brand reveal">
           <div class="footer-logo">
-            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+            <img
+              class="footer-logo-light"
+              src="./assets/logos/B-W-D.png"
+              alt="BWD Logo"
+            />
+            <img
+              class="footer-logo-dark"
+              src="./assets/logos/BWD.png"
+              alt="BWD Logo"
+            />
           </div>
         </div>
 
-        <div class="footer-contact reveal">
-          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+        <div class="footer-socials">
+          <a
+            href="https://linkedin.com/in/artur-burzala"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-          <a href="tel:+48605721600"> +48 605 721 600 </a>
+          <a
+            href="https://www.facebook.com/burzykwebdesign"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>kontakt@b-w-d.pl</span>
+          </a>
+
+          <a href="tel:+48605721600" class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+48 605 721 600</span>
+          </a>
         </div>
       </div>
 

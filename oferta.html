@@ -48,6 +48,10 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -73,7 +77,12 @@
     <header class="navbar">
       <div class="container navbar-container">
         <a href="./index.html" class="logo">
-          <img src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img class="logo-light" src="./assets/logos/BWD.png" alt="BWD Logo" />
+          <img
+            class="logo-dark"
+            src="./assets/logos/B-W-D.png"
+            alt="BWD Logo"
+          />
         </a>
 
         <nav class="nav-menu">
@@ -89,6 +98,7 @@
         </nav>
 
         <div class="navbar-actions">
+          <button id="theme-toggle" class="theme-toggle">🌙</button>
           <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
         </div>
 
@@ -107,10 +117,7 @@
         <div class="hero-text reveal">
           <div class="hero-badge">OFERTA</div>
 
-          <h1>
-            Tworzę nowoczesne strony, które budują profesjonalny wizerunek
-            marki.
-          </h1>
+          <h1>Tworzę strony, które będą Twoją wizytówką online.</h1>
 
           <p class="hero-description">
             Projektuję szybkie, responsywne i estetyczne strony internetowe dla
@@ -135,7 +142,7 @@
         <div class="section-header reveal">
           <span class="section-tag"> USŁUGI </span>
 
-          <h2>Kompleksowe projektowanie nowoczesnych stron WWW.</h2>
+          <h2>Tworzenie stron WWW od zera.</h2>
 
           <p>
             Każdy projekt tworzony jest indywidualnie — z naciskiem na estetykę,
@@ -189,20 +196,22 @@
           <!-- CARD -->
 
           <div class="service-card reveal">
-            <div class="service-icon">✨</div>
+            <div class="service-icon">🖼️</div>
 
-            <h3>UX/UI Design</h3>
+            <h3>Tworzenie grafiki</h3>
 
-            <p>Projektowanie estetycznych i intuicyjnych interfejsów.</p>
+            <p>
+              Projektowanie logo i przygotowywanie oprawy wizualnej na życzenie.
+            </p>
 
             <ul>
-              <li>Premium UX</li>
+              <li>Projekty dopasowane do Ciebie</li>
 
-              <li>Nowoczesny branding</li>
+              <li>Przygotowanie oprawy graficznej</li>
 
-              <li>Lepsza czytelność</li>
+              <li>Optymalizacja zdjęć</li>
 
-              <li>Spójny design system</li>
+              <li>Modyfikacja przy pomocy AI</li>
             </ul>
           </div>
         </div>
@@ -216,43 +225,45 @@
         <div class="section-header reveal">
           <span class="section-tag"> DLACZEGO JA? </span>
 
-          <h2>
-            Ponieważ tworzę strony dopasowane do potrzeb i oczekiwań klienta.
-          </h2>
+          <h2>Ponieważ otrzymasz stronę która Ci się spodoba.</h2>
         </div>
 
         <div class="services-grid">
           <div class="service-card reveal">
-            <h3>Nowoczesny design</h3>
-
-            <p>
-              Minimalistyczne i estetyczne projekty, które wyglądają premium na
-              każdym urządzeniu.
-            </p>
-          </div>
-
-          <div class="service-card reveal">
-            <h3>Szybkość działania</h3>
-
-            <p>
-              Optymalizacja wydajności, responsywność i dbałość o płynne
-              działanie strony.
-            </p>
-          </div>
-
-          <div class="service-card reveal">
             <h3>Indywidualne podejście</h3>
 
             <p>
-              Każdy projekt jest dopasowany do branży, klientów i Twoich
-              preferencji.
+              Każdy projekt od samego początku jest tworzony zgodnie z Twoim
+              życzeniem. Masz 2 sesje poprawek w przypadku zmiany decyzji.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <h3>Unikalny design</h3>
+
+            <p>
+              Strona powstaje bez użycia gotowych szablonów, przez co każda
+              realizacja to wyjątkowy projekt.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <h3>Zaangażowanie</h3>
+
+            <p>
+              Do każdej kwestii podchodzę z pełnym zaangażowaniem i będę chciał
+              zaangażować w projekt również Ciebie!
+            </p>
+            <p>
+              Dobre materiały, indywidualny kontent oraz komplet danych przy
+              tworzeniu strony to podstawa!
             </p>
           </div>
         </div>
       </div>
     </section>
-    
-          <!-- PRICING -->
+
+    <!-- PRICING 
 
 <section class="section">
   <div class="container">
@@ -267,8 +278,8 @@
   </p>
 </div>
 
-<div class="pricing-grid">
-  <!-- LANDING PAGE -->
+<div class="pricing-grid">-->
+    <!-- LANDING PAGE 
 
   <article class="pricing-card pricing-lp reveal">
 
@@ -290,9 +301,9 @@
     Start
   </span>
 
-</article>
+</article>-->
 
-  <!-- BUSINESS -->
+    <!-- BUSINESS 
 
   <article class="pricing-card pricing-business reveal">
 
@@ -313,9 +324,9 @@
     Najlepszy wybór
   </span>
 
-</article>
+</article>-->
 
-  <!-- PREMIUM -->
+    <!-- PREMIUM 
 
   <article class="pricing-card pricing-premium reveal">
 
@@ -344,12 +355,11 @@
     Porozmawiajmy o Twoim projekcie
   </a>
 </div>
-```
 
   </div>
 </section>
 
-    </section>
+    </section>-->
 
     <!-- PROCESS -->
 
@@ -374,7 +384,10 @@
 
             <h3>Rozmowa</h3>
 
-            <p>Poznaję Twoją firmę, potrzeby i główne cele projektu.</p>
+            <p>
+              Poznaję Twoją firmę, potrzeby i główne cele projektu. Ustalamy
+              ramy czasowe i umawiamy się na kolejny kontakt.
+            </p>
           </div>
 
           <!-- STEP -->
@@ -396,8 +409,12 @@
           <div class="process-step reveal">
             <div class="process-number">03</div>
 
-            <h3>Wdrożenie</h3>
-
+            <h3>Testy | Wdrożenie</h3>
+            <p>
+              Zaczynamy od wersji testowej na moim ftp, tam sprawdzasz
+              podstawowe funkcjonalności, układ i styl strony, dopracowujemy
+              stronę wspólnie (podgląd live).
+            </p>
             <p>
               Publikacja strony, optymalizacja i finalne poprawki. Każdy projekt
               musi być dopięty na ostatni guzik, nie pozostawiam niczego
@@ -415,7 +432,7 @@
         <div class="section-header reveal">
           <span class="section-tag"> FAQ </span>
 
-          <h2>Najczęstsze pytania.</h2>
+          <h2>Najczęściej zadawane pytania.</h2>
         </div>
 
         <div class="services-grid">
@@ -424,7 +441,8 @@
 
             <p>
               Czas realizacji zależy od złożoności projektu, jednak większość
-              stron powstaje w ciągu kilku dni.
+              stron powstaje w ciągu kilku dni. W przypadku bardziej
+              skomplikowanych projektów ustalamy termin indywidualnie.
             </p>
           </div>
 
@@ -432,16 +450,19 @@
             <h3>Czy strona działa na mobile?</h3>
 
             <p>
-              Tak — każda strona projektowana jest w podejściu mobile first. W
-              obecnych czasach poprawne działanie serwisu na urządzeniach
-              mobilnych jest priorytetem.
+              Tak — każda strona projektowana jest w podejściu mobile first.
+              Urządzenia mobilne obecnie odpowiadają za niemal 60% całego ruchu
+              sieciowego!
             </p>
           </div>
 
           <div class="service-card reveal">
             <h3>Czy pomagasz z hostingiem?</h3>
 
-            <p>Tak — mogę pomóc z domeną, hostingiem i publikacją strony.</p>
+            <p>
+              Tak — mogę pomóc z domeną, hostingiem i publikacją strony.
+              Pierwsza konfiguracja w cenie projektu!
+            </p>
           </div>
 
           <div class="service-card reveal">
@@ -483,9 +504,7 @@
 
           <h2>Masz pomysł na swoją stronę?</h2>
 
-          <p>
-            Stwórzmy nowoczesny projekt, który wyróżni Twój biznes w internecie.
-          </p>
+          <p>Stwórzmy razem Twoją wizytówkę w internecie!</p>
 
           <div class="cta-buttons">
             <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
@@ -498,18 +517,51 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="footer" id="kontakt">
       <div class="container footer-content">
         <div class="footer-brand reveal">
           <div class="footer-logo">
-            <img src="./assets/logos/B-W-D.png" alt="B-W-D Logo" />
+            <img
+              class="footer-logo-light"
+              src="./assets/logos/B-W-D.png"
+              alt="BWD Logo"
+            />
+            <img
+              class="footer-logo-dark"
+              src="./assets/logos/BWD.png"
+              alt="BWD Logo"
+            />
           </div>
         </div>
 
-        <div class="footer-contact reveal">
-          <a href="mailto:kontakt@b-w-d.pl"> kontakt@b-w-d.pl </a>
+        <div class="footer-socials">
+          <a
+            href="https://linkedin.com/in/artur-burzala"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
 
-          <a href="tel:+48605721600"> +48 605 721 600 </a>
+          <a
+            href="https://www.facebook.com/burzykwebdesign"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact reveal">
+          <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>kontakt@b-w-d.pl</span>
+          </a>
+
+          <a href="tel:+48605721600" class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+48 605 721 600</span>
+          </a>
         </div>
       </div>
 
@@ -531,6 +583,7 @@
         </p>
       </div>
     </footer>
+
     <!-- FLOATING CTA -->
 
     <a href="./kontakt.html" class="floating-cta">
