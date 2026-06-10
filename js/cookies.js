@@ -22,12 +22,12 @@ document.addEventListener(
     ========================== */
 
     if (
-      localStorage.getItem(
-        "bwd-cookie-consent"
-      )
-    ) {
-      cookieBanner.classList.add("hidden");
-    }
+  !localStorage.getItem(
+    "bwd-cookie-consent"
+  )
+) {
+  cookieBanner.classList.add("visible");
+}
 
     /* =========================
        ACCEPT

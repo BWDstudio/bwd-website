@@ -1,3 +1,4 @@
+history.scrollRestoration = "manual";
 // =========================
 // NAVBAR SCROLL
 // =========================

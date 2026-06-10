@@ -570,106 +570,6 @@ p {
   transform: translateY(0);
 }
 
-/* FLOATING CTA */
-
-.floating-cta {
-  position: fixed;
-
-  right: 20px;
-
-  top: 65%;
-
-  transform: translateY(-50%);
-
-  display: none;
-  align-items: center;
-  justify-content: center;
-
-  width: 72px;
-  height: 72px;
-
-  border-radius: 50%;
-
-  overflow: visible;
-
-  background:
-    var(--primary-glass);
-
-  backdrop-filter: blur(var(--blur-glass));
-
-  color: var(--white);
-
-  font-size: 0.9rem;
-  font-weight: 700;
-
-  box-shadow:
-    var(--shadow-floating);
-
-  z-index: 9999;
-
-  transition: var(--transition);
-
-  will-change: transform;
-
-  animation:
-    floatingCTA 4s ease-in-out infinite;
-}
-
-.floating-cta-close {
-  position: absolute;
-
-  top: -6px;
-  right: -6px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 20px;
-  height: 20px;
-
-  border-radius: 50%;
-
-  background: var(--glass-black);
-
-  color: var(--white);
-
-  font-size: 12px;
-  font-weight: 700;
-
-  cursor: pointer;
-
-  backdrop-filter:
-  blur(var(--blur-glass));
-}
-
-/* FLOATING CTA HOVER */
-
-.floating-cta:hover {
-  scale: 1.04;
-
-  background:
-    var(--primary-dark);
-}
-
-/* FLOATING CTA ANIMATION */
-
-@keyframes floatingCTA {
-
-  0% {
-    translate: 0 0;
-  }
-
-  50% {
-    translate: 0 -8px;
-  }
-
-  100% {
-    translate: 0 0;
-  }
-
-}
-
 /* PORTFOLIO GROUPS */
 
 .portfolio-group-dark {
@@ -911,7 +811,7 @@ p {
 
   font-size: clamp(2rem, 1.45vw, 3rem);
 
-  min-height: 5.8rem;
+  min-height: 1.8rem;
 
   line-height: 1.12;
   letter-spacing: 0em;
@@ -1143,7 +1043,7 @@ p {
 }
 
 .pricing-card.featured {
-  border-color: var(--accent);
+  border-color: var(--primary);
 }
 
 .pricing-type {
@@ -1532,4 +1432,38 @@ height: 330px;
 
   box-shadow:
     0 0 12px rgba(0,255,140,.25);
+}
+
+/* scroll progress */
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 0%;
+  height: 3px;
+
+  z-index: 9999;
+
+  background: var(--primary);
+
+  box-shadow: 0 0 12px rgba(55, 208, 113, 0.5);
+
+  transition: width 0.1s linear;
+}
+
+.rotating-text {
+  color: var(--primary);
+
+  display: inline-block;
+
+  transition:
+    opacity .3s ease,
+    transform .3s ease;
+}
+
+.rotating-text.fade-out {
+  opacity: 0;
+  transform: translateY(8px);
 }

@@ -78,6 +78,7 @@
   </head>
 
   <body>
+    <div class="scroll-progress"></div>
     <!-- NAVBAR -->
 
     <header class="navbar">
@@ -123,7 +124,12 @@
         <div class="hero-text reveal">
           <div class="hero-badge">NOWOCZESNE STRONY INTERNETOWE</div>
 
-          <h1>Projektuję strony, które są ładne, szybkie i funkcjonalne.</h1>
+          <h1>
+            Projektuję strony, które
+            <span id="rotating-text" class="rotating-text">
+              wyróżniają marki.
+            </span>
+          </h1>
 
           <p class="hero-description">
             Tworzę nowoczesne, szybkie i responsywne strony internetowe dla
@@ -296,7 +302,7 @@
               <div class="project-meta">
                 <span class="project-tag"> PRACOWNIA SZTUKI </span>
               </div>
-              <h3>Pierwsza realizacja online.</h3>
+              <h3>Pierwsza realizacja online</h3>
 
               <p>
                 Nowoczesna strona internetowa dla pracowni artystycznej.Projekt
@@ -495,13 +501,6 @@
       </div>
     </div>
 
-    <!-- MOBILE FLOATING CTA -->
-
-    <a href="./kontakt.html" class="floating-cta">
-      Wycena
-      <span class="floating-cta-close"> × </span>
-    </a>
-
     <!-- COOKIE BANNER -->
 
     <div class="cookie-banner" id="cookieBanner">
@@ -529,5 +528,6 @@
     <script src="./js/animations.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/cookies.js"></script>
+    <script src="./js/hero-rotate.js"></script>
   </body>
 </html>

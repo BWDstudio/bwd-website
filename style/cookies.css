@@ -9,10 +9,14 @@
 
   z-index: 10000;
 
-  display: flex;
+  display: none;
   justify-content: center;
 
   pointer-events: none;
+}
+
+.cookie-banner.visible {
+  display: flex;
 }
 
 /* COOKIE CONTENT */
