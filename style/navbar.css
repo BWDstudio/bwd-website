@@ -49,7 +49,7 @@
 /* LOGO IMAGE */
 
 .logo img {
-  width: clamp(120px, 8vw, 200px);
+  width: clamp(72px, 8vw, 200px);
 
   height: auto;
 

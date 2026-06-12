@@ -21,35 +21,6 @@ const projectCards =
   ) {
 
 // =========================
-// OPEN MODAL
-// =========================
-
-projectCards.forEach((card) => {
-
-  card.addEventListener("click", () => {
-
-    if (
-  card.classList.contains("demo-link") ||
-  card.dataset.demo === "true"
-) {
-  return;
-}
-
-    const image =
-  card.dataset.full ||
-  card.querySelector("img").src;
-
-modalImage.src = image;
-
-    modal.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-
-  });
-
-});
-
-// =========================
 // CLOSE MODAL FUNCTION
 // =========================
 

@@ -6,12 +6,11 @@ window.addEventListener("load", () => {
   if (!el) return;
 
   const phrases = [
-    "wyróżniają firmy.",
     "przyciągają klientów.",
-    "budują profesjonalny wizerunek.",
-    "zwiększają liczbę zapytań.",
-    "działają na każdym urządzeniu.",
-    "pracują dla Twojej marki."
+    "budują zaufanie.",
+    "zwiększają widoczność.",
+    "wspierają rozwój firmy.",
+    "pracują dla Ciebie."
   ];
 
   let current = 0;
@@ -22,11 +21,11 @@ window.addEventListener("load", () => {
 
     setTimeout(() => {
 
-      current =
-        (current + 1) % phrases.length;
-
       el.textContent =
         phrases[current];
+
+      current =
+        (current + 1) % phrases.length;
 
       el.classList.remove("fade-out");
 

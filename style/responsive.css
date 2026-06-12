@@ -50,9 +50,6 @@
     flex-direction: column;
   }
 
-  .portfolio-layout-creative .project-meta {
-    margin-top: auto;
-  }
 
   /* POSTERS */
 
@@ -75,12 +72,6 @@
     font-size: clamp(1.32rem, 0.9vw, 1.5rem);
 
     line-height: 1.7;
-  }
-
-  /* META */
-
-  .project-meta {
-    font-size: 1.3rem;
   }
 
 }
@@ -110,7 +101,7 @@
     flex-direction: column;
   }
 
-  .portfolio-layout-creative .project-meta {
+  .portfolio-layout-creative {
     margin-top: auto;
 
     font-size: 1.1rem;
@@ -201,7 +192,7 @@
 
     transform: translateX(100%);
 
-    width: 320px;
+    width: 180px;
     height: 100vh;
 
     display: flex;
@@ -282,23 +273,6 @@
   .desktop-mockup {
     width: min(100%, 700px);
 
-  }
-
-  /* MOBILE MOCKUP */
-
-  .mobile-mockup {
-    position: relative;
-
-    width: clamp(140px, 24vw, 200px);
-
-    right: auto;
-    bottom: auto;
-
-    margin: 0 auto;
-
-    overflow: hidden;
-
-    border-radius: 24px;
   }
 
   /* PORTFOLIO */
@@ -412,6 +386,8 @@
 
     line-height: 1;
 
+    min-height: 4.8em;
+
     font-weight: 600;
 
     letter-spacing: -0.5px;
@@ -511,12 +487,6 @@
     font-size: 0.95rem;
 
     color: var(--text-light);
-  }
-
-  .project-meta {
-    justify-content: center;
-
-    gap: 12px;
   }
 
   /* PROCESS */

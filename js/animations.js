@@ -60,7 +60,7 @@ if (!prefersReducedMotion) {
 
 const staggerItems =
   document.querySelectorAll(
-    ".service-card, .project-card, .process-step"
+    ".service-card, .process-step, .about-stat"
   );
 
 if (!prefersReducedMotion) {
@@ -68,7 +68,7 @@ if (!prefersReducedMotion) {
   staggerItems.forEach((item, index) => {
 
     item.style.transitionDelay =
-      `${index * 0.15}s`;
+      `${index * 0.1}s`;
 
   });
 
@@ -84,14 +84,10 @@ const hero =
 const desktopMockup =
   document.querySelector(".desktop-mockup");
 
-const mobileMockup =
-  document.querySelector(".mobile-mockup");
-
 if (
   !prefersReducedMotion &&
   hero &&
-  desktopMockup &&
-  mobileMockup
+  desktopMockup
 ) {
 
   hero.addEventListener("mousemove", (e) => {
@@ -107,11 +103,6 @@ if (
       rotateY(${-8 - x}deg)
       rotateX(${2 + y}deg)
       translateY(-10px)
-    `;
-
-    mobileMockup.style.transform = `
-      translateY(-10px)
-      translateX(${-x}px)
     `;
 
   });
@@ -167,7 +158,84 @@ function updateProgress() {
 
   progressBar.style.width = `${progress}%`;
 }
+// =========================
+// FAQ ACCORDION
+// =========================
+
+const faqItems =
+  document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+
+  const question =
+    item.querySelector(".faq-question");
+
+  question.addEventListener("click", () => {
+
+    item.classList.toggle("active");
+
+  });
+
+});
 
 window.addEventListener("scroll", updateProgress);
 
 updateProgress();
+
+// =========================
+// FLOATING STATS
+// =========================
+
+const statNumber =
+  document.querySelector(".stat-number");
+
+const statLabel =
+  document.querySelector(".stat-label");
+
+if (statNumber && statLabel) {
+
+  const stats = [
+    {
+      number: "20+",
+      label: "lat doświadczenia zawodowego"
+    },
+    {
+      number: "10+",
+      label: "lat pracy z klientem"
+    },
+    {
+      number: "7+",
+      label: "lat pracy w produkcji"
+    },
+    {
+      number: "100+",
+      label: "osób w zarządzanych zespołach"
+    }
+  ];
+
+  let statIndex = 0;
+
+  setInterval(() => {
+
+    statNumber.classList.add("fade-out");
+    statLabel.classList.add("fade-out");
+
+    setTimeout(() => {
+
+      statIndex =
+        (statIndex + 1) % stats.length;
+
+      statNumber.textContent =
+        stats[statIndex].number;
+
+      statLabel.textContent =
+        stats[statIndex].label;
+
+      statNumber.classList.remove("fade-out");
+      statLabel.classList.remove("fade-out");
+
+    }, 300);
+
+  }, 5000);
+
+}
