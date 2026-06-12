@@ -118,191 +118,191 @@
         </button>
       </div>
     </header>
+    <main>
+      <!-- HERO -->
 
-    <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text reveal">
+            <div class="hero-badge">KONTAKT</div>
 
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text reveal">
-          <div class="hero-badge">KONTAKT</div>
-
-          <h1>Masz pomysł na swoją nową stronę internetową?</h1>
-          <p class="hero-description">
-            Masz pomysł na nową stronę, landing page lub redesign istniejącego
-            serwisu? Napisz wiadomość — odpowiem, omówimy potrzeby Twojej firmy
-            i przygotuję wstępną wycenę projektu.
-          </p>
+            <h1>Masz pomysł na swoją nową stronę internetową?</h1>
+            <p class="hero-description">
+              Masz pomysł na nową stronę, landing page lub redesign istniejącego
+              serwisu? Napisz wiadomość — odpowiem, omówimy potrzeby Twojej
+              firmy i przygotuję wstępną wycenę projektu.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACT -->
+      <!-- CONTACT -->
 
-    <section class="contact section">
-      <div class="container contact-layout">
-        <!-- LEFT -->
+      <section class="contact section">
+        <div class="container contact-layout">
+          <!-- LEFT -->
 
-        <div class="contact-info reveal">
-          <span class="section-tag">FORMULARZ KONTAKTOWY</span>
+          <div class="contact-info reveal">
+            <span class="section-tag">FORMULARZ KONTAKTOWY</span>
 
-          <h2>Skontaktuj się i opowiedz o swoim projekcie.</h2>
+            <h2>Skontaktuj się i opowiedz o swoim projekcie.</h2>
 
-          <p>
-            Najczęściej odpowiadam w ciągu 24 godzin. Im więcej szczegółów
-            podasz, tym łatwiej będzie przygotować dokładną wycenę i kierunek
-            projektu.
-          </p>
+            <p>
+              Najczęściej odpowiadam w ciągu 24 godzin. Im więcej szczegółów
+              podasz, tym łatwiej będzie przygotować dokładną wycenę i kierunek
+              projektu.
+            </p>
 
-          <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
 
-          Podmień na:
+            Podmień na:
 
-          <div class="contact-details">
-            <a href="mailto:kontakt@b-w-d.pl" class="contact-detail-item">
-              <img
-                src="./assets/icons/mail.svg"
-                alt=""
-                class="contact-detail-icon"
-              />
+            <div class="contact-details">
+              <a href="mailto:kontakt@b-w-d.pl" class="contact-detail-item">
+                <img
+                  src="./assets/icons/mail.svg"
+                  alt=""
+                  class="contact-detail-icon"
+                />
 
-              <div>
-                <span>E-mail</span>
-                <strong>kontakt@b-w-d.pl</strong>
-              </div>
-            </a>
+                <div>
+                  <span>E-mail</span>
+                  <strong>kontakt@b-w-d.pl</strong>
+                </div>
+              </a>
 
-            <a href="tel:+48605721600" class="contact-detail-item">
-              <img
-                src="./assets/icons/phone.svg"
-                alt=""
-                class="contact-detail-icon"
-              />
+              <a href="tel:+48605721600" class="contact-detail-item">
+                <img
+                  src="./assets/icons/phone.svg"
+                  alt=""
+                  class="contact-detail-icon"
+                />
 
-              <div>
-                <span>Telefon</span>
-                <strong>+48 605 721 600</strong>
-              </div>
-            </a>
+                <div>
+                  <span>Telefon</span>
+                  <strong>+48 605 721 600</strong>
+                </div>
+              </a>
 
-            <a
-              href="https://linkedin.com/in/artur-burzala"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-detail-item"
+              <a
+                href="https://linkedin.com/in/artur-burzala"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-detail-item"
+              >
+                <img
+                  src="./assets/icons/linkedin.svg"
+                  alt=""
+                  class="contact-detail-icon"
+                />
+
+                <div>
+                  <span>LinkedIn</span>
+                  <strong>Połączmy się</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- FORM -->
+
+          <div class="contact-form-wrapper reveal">
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/xaqvrwbd"
+              method="POST"
             >
-              <img
-                src="./assets/icons/linkedin.svg"
-                alt=""
-                class="contact-detail-icon"
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nowa wiadomość z formularza BWD"
               />
 
-              <div>
-                <span>LinkedIn</span>
-                <strong>Połączmy się</strong>
+              <div class="form-group">
+                <label for="name"> Imię / firma </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Twoja Nazwa"
+                  required
+                />
               </div>
-            </a>
+
+              <div class="form-group">
+                <label for="email"> Adres e-mail </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="kontakt@email.pl"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="project"> Typ projektu </label>
+
+                <select id="project" name="project">
+                  <option value="">Wybierz opcję</option>
+
+                  <option value="landing-page">Landing Page</option>
+
+                  <option value="website">Strona firmowa</option>
+
+                  <option value="portfolio">Portfolio</option>
+
+                  <option value="redesign">Redesign strony</option>
+
+                  <option value="other">Inny projekt</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message"> Opis projektu </label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  placeholder="Opisz swój projekt, branżę, inspiracje lub funkcje, które mają znaleźć się na stronie."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary btn-full">
+                Wyślij wiadomość
+              </button>
+            </form>
           </div>
         </div>
+      </section>
 
-        <!-- FORM -->
+      <!-- CTA -->
 
-        <div class="contact-form-wrapper reveal">
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xaqvrwbd"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="Nowa wiadomość z formularza BWD"
-            />
+      <section class="cta section">
+        <div class="container">
+          <div class="cta-box reveal">
+            <span class="section-tag"> BURZYK WEB DESIGN </span>
 
-            <div class="form-group">
-              <label for="name"> Imię / firma </label>
+            <h2>Gotowy na swoją nową stronę internetową?</h2>
 
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Twoja Nazwa"
-                required
-              />
+            <p>
+              Opowiedz mi o swojej działalności, a wspólnie stworzymy stronę
+              dopasowaną do Twojej firmy i klientów.
+            </p>
+
+            <div class="cta-buttons">
+              <a href="./portfolio.html" class="btn-primary">
+                Zobacz portfolio
+              </a>
             </div>
-
-            <div class="form-group">
-              <label for="email"> Adres e-mail </label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="kontakt@email.pl"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="project"> Typ projektu </label>
-
-              <select id="project" name="project">
-                <option value="">Wybierz opcję</option>
-
-                <option value="landing-page">Landing Page</option>
-
-                <option value="website">Strona firmowa</option>
-
-                <option value="portfolio">Portfolio</option>
-
-                <option value="redesign">Redesign strony</option>
-
-                <option value="other">Inny projekt</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="message"> Opis projektu </label>
-
-              <textarea
-                id="message"
-                name="message"
-                rows="7"
-                placeholder="Opisz swój projekt, branżę, inspiracje lub funkcje, które mają znaleźć się na stronie."
-                required
-              ></textarea>
-            </div>
-
-            <button type="submit" class="btn-primary btn-full">
-              Wyślij wiadomość
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-
-    <section class="cta section">
-      <div class="container">
-        <div class="cta-box reveal">
-          <span class="section-tag"> BURZYK WEB DESIGN </span>
-
-          <h2>Gotowy na swoją nową stronę internetową?</h2>
-
-          <p>
-            Opowiedz mi o swojej działalności, a wspólnie stworzymy stronę
-            dopasowaną do Twojej firmy i klientów.
-          </p>
-
-          <div class="cta-buttons">
-            <a href="./portfolio.html" class="btn-primary">
-              Zobacz portfolio
-            </a>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <!-- FOOTER -->
 
     <footer class="footer" id="kontakt">
