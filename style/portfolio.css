@@ -83,6 +83,8 @@
 
   backdrop-filter: blur(var(--blur-glass));
 
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+
   color: var(--white);
 
   cursor: pointer;
@@ -131,6 +133,8 @@
     transform 0.3s ease;
 
   backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
 
   z-index: 50;
 }

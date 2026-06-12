@@ -47,10 +47,6 @@
     <link rel="stylesheet" href="./style/footer.css" />
     <link rel="stylesheet" href="./style/cookies.css" />
     <link rel="stylesheet" href="./style/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -73,20 +69,17 @@
 
   <body>
     <div class="scroll-progress"></div>
+
     <!-- NAVBAR -->
 
     <header class="navbar">
       <div class="container navbar-container">
         <a href="./index.html" class="logo">
-          <img
-            class="logo-light"
-            src="./assets/logos/BWD.png"
-            alt="b-w-d Logo"
-          />
+          <img class="logo-light" src="./assets/logos/BWD.png" alt="BWD Logo" />
           <img
             class="logo-dark"
             src="./assets/logos/B-W-D.png"
-            alt="b-w-d Logo"
+            alt="BWD Logo"
           />
         </a>
 
@@ -103,14 +96,25 @@
         </nav>
 
         <div class="navbar-actions">
-          <button id="theme-toggle" class="theme-toggle">🌙</button>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Przełącz motyw"
+          >
+            <img
+              id="theme-icon"
+              src="./assets/icons/moon.svg"
+              alt=""
+              class="theme-icon"
+            />
+          </button>
           <a href="./kontakt.html" class="btn-primary"> Darmowa wycena </a>
         </div>
 
         <button class="mobile-menu-btn" aria-label="Otwórz menu">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </button>
       </div>
     </header>
@@ -432,12 +436,12 @@
             <img
               class="footer-logo-light"
               src="./assets/logos/B-W-D.png"
-              alt="b-w-d Logo"
+              alt="BWD Logo"
             />
             <img
               class="footer-logo-dark"
               src="./assets/logos/BWD.png"
-              alt="b-w-d Logo"
+              alt="BWD Logo"
             />
           </div>
         </div>
@@ -446,28 +450,30 @@
           <a
             href="https://linkedin.com/in/artur-burzala"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <img src="./assets/icons/linkedin.svg" alt="" class="social-icon" />
           </a>
 
           <a
             href="https://www.facebook.com/burzykwebdesign"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <i class="fa-brands fa-facebook-f"></i>
+            <img src="./assets/icons/fb.svg" alt="" class="social-icon" />
           </a>
         </div>
 
         <div class="footer-contact reveal">
           <a href="mailto:kontakt@b-w-d.pl" class="footer-contact-item">
-            <i class="fa-solid fa-envelope"></i>
+            <img src="./assets/icons/mail.svg" alt="" class="contact-icon" />
             <span>kontakt@b-w-d.pl</span>
           </a>
 
           <a href="tel:+48605721600" class="footer-contact-item">
-            <i class="fa-solid fa-phone"></i>
+            <img src="./assets/icons/phone.svg" alt="" class="contact-icon" />
             <span>+48 605 721 600</span>
           </a>
         </div>

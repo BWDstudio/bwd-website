@@ -35,6 +35,8 @@
 
   backdrop-filter: blur(var(--blur-glass));
 
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+
   border-bottom: 1px solid var(--border);
 
   padding: 18px 0;
@@ -126,8 +128,8 @@
 }
 
 .theme-toggle {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
 
   display: flex;
   align-items: center;
@@ -137,7 +139,7 @@
   border-radius: 50%;
 
   background: var(--white);
-  color: var(--text);
+  color: var(--primary);
 
   cursor: pointer;
 
@@ -148,6 +150,12 @@
   transform: translateY(-2px);
 
   background: var(--bg-hover);
+}
+
+.theme-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 /* MOBILE MENU BUTTON */
 
@@ -175,3 +183,4 @@
 
   transition: var(--transition);
 }
+

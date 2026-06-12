@@ -10,7 +10,8 @@ window.addEventListener("load", () => {
     "budują zaufanie.",
     "zwiększają widoczność.",
     "wspierają rozwój firmy.",
-    "pracują dla Ciebie."
+    "pracują dla Ciebie.",
+    "wyróżniają marki."
   ];
 
   let current = 0;

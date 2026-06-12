@@ -120,6 +120,22 @@ if (savedTheme) {
   );
 }
 
+const themeIcon = document.getElementById("theme-icon");
+
+function updateThemeIcon() {
+  const currentTheme =
+    document.documentElement.getAttribute("data-theme");
+
+  console.log("Theme:", currentTheme);
+
+  themeIcon.src =
+    currentTheme === "dark"
+      ? "./assets/icons/sun.svg"
+      : "./assets/icons/moon.svg";
+
+  console.log("Icon:", themeIcon.src);
+}
+
 themeToggle?.addEventListener("click", () => {
 
   const current =
@@ -130,6 +146,9 @@ themeToggle?.addEventListener("click", () => {
       ? "light"
       : "dark";
 
+  console.log("Current:", current);
+  console.log("Next:", next);
+
   document.documentElement.setAttribute(
     "data-theme",
     next
@@ -137,6 +156,7 @@ themeToggle?.addEventListener("click", () => {
 
   localStorage.setItem("theme", next);
 
+  updateThemeIcon();
 });
 
 const progressBar = document.querySelector(".scroll-progress");

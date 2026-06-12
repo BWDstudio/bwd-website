@@ -796,6 +796,7 @@ p {
     0 10px 30px rgba(0,0,0,0.14);
 
   backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
 
   opacity: 1;
 }
@@ -1542,4 +1543,37 @@ height: 330px;
 .fade-out {
   opacity: 0;
   transform: translateY(8px);
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.footer-socials a:hover .social-icon {
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.contact-detail-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }

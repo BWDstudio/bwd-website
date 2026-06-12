@@ -285,6 +285,16 @@
   transition: transform 0.3s ease;
 }
 
+.faq-icon-svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon-svg {
+  transform: rotate(135deg);
+}
+
 .faq-answer {
   max-height: 0;
 
