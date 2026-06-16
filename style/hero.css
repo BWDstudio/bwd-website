@@ -94,10 +94,43 @@
 /* HERO RATING */
 
 .hero-rating {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  gap: 0.75rem;
 
-  gap: 16px;
+  margin-top: 2rem;
+  padding: 0.6rem 1rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: transform 0.2s ease;
+}
+
+.hero-rating:hover {
+  transform: translateY(-2px);
+}
+
+.hero-rating-stars {
+  color: #fbbf24;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+.hero-rating-text strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.hero-rating-text p {
+  font-size: 0.8rem;
+  opacity: 0.75;
 }
 
 /* HERO AVATARS */
@@ -118,16 +151,6 @@
 
 .hero-avatars img:first-child {
   margin-left: 0;
-}
-
-/* HERO RATING TEXT */
-
-.hero-rating-text span {
-  color: var(--rating-star);
-}
-
-.hero-rating-text p {
-  font-size: 0.9rem;
 }
 
 /* HERO VISUAL */
