@@ -21,7 +21,7 @@
 /* HERO TEXT */
 
 .hero-text {
-  flex: 1;
+  flex: 0 1 52%;
 
   width: 100%;
   max-width: 900px;
@@ -99,9 +99,10 @@
   gap: 0.75rem;
 
   margin-top: 2rem;
+  margin-bottom: 0.5rem;
   padding: 0.6rem 1rem;
 
-  background: var(--surface);
+  background: var(--white);
   border: 1px solid var(--border);
 
   border-radius: 999px;
@@ -158,13 +159,35 @@
 .hero-visual {
   position: relative;
 
-  overflow: visible;
-
-  flex: 1;
-
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex: 0 1 48%;
   align-items: center;
+
+  gap: 24px;
+}
+
+.hero-rating {
+  margin-top: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.75rem 1rem;
+
+  border-radius: 999px;
+
+  background: var(--white);
+  border: 1px solid var(--border);
+
+  text-decoration: none;
+
+  transition: transform .2s ease;
+}
+
+.hero-rating:hover {
+  transform: translateY(-2px);
 }
 
 /* DESKTOP MOCKUP */
