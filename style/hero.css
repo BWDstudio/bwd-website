@@ -110,11 +110,19 @@
   text-decoration: none;
   color: inherit;
 
-  transition: transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .hero-rating:hover {
   transform: translateY(-2px);
+
+  border-color: var(--primary-border);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .hero-rating-stars {
@@ -132,6 +140,10 @@
 .hero-rating-text p {
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+.hero-rating:active {
+  transform: translateY(0);
 }
 
 /* HERO AVATARS */

@@ -105,6 +105,32 @@ document.addEventListener(
   }
 );
 
+document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof gtag !== "undefined") {
+      gtag("event", "click_phone");
+    }
+  });
+});
+
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof gtag !== "undefined") {
+      gtag("event", "click_email");
+    }
+  });
+});
+
+document
+  .querySelectorAll('a[href*="linkedin.com"]')
+  .forEach((link) => {
+    link.addEventListener("click", () => {
+      if (typeof gtag !== "undefined") {
+        gtag("event", "click_linkedin");
+      }
+    });
+  });
+
 function fixOrphans() {
   document
     .querySelectorAll("h1, h2, h3, h4, h5, h6, p, li")
