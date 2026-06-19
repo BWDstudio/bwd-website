@@ -136,7 +136,7 @@ function fixOrphans() {
     .querySelectorAll("h1, h2, h3, h4, h5, h6, p, li")
     .forEach((el) => {
       el.innerHTML = el.innerHTML.replace(
-        /(\s)(a|i|o|u|w|z|na|do|od|po|za|we|ze|ku|dla)(\s)/gi,
+        /(\s)(a|i|o|u|w|z|na|do|od|po|za|we|ze|ku|dla)(\s+)/gi,
         "$1$2&nbsp;"
       );
     });
