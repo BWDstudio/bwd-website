@@ -1,0 +1,269 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.project-card {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--white);
+}
+
+.project-card h3 {
+  margin-bottom: 12px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 28px;
+}
+
+.service-card h3 {
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .project-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.tech-badge {
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  background: var(--primary-soft);
+
+  border: 1px solid var(--primary-border);
+
+  color: var(--primary);
+
+  font-weight: 600;
+}
+
+.case-study-preview {
+  margin-top: 48px;
+}
+
+.case-study-preview img {
+  width: 100%;
+
+  height: auto;
+
+  border-radius: 32px;
+
+  border: 1px solid var(--border);
+
+  display: block;
+}
+
+.lighthouse-results {
+  margin-top: 64px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 32px;
+}
+
+.lighthouse-card {
+  background: var(--white);
+
+  border: 1px solid var(--border);
+
+  border-radius: 24px;
+
+  padding: 24px;
+}
+
+.lighthouse-card h3 {
+  margin-bottom: 20px;
+}
+
+.lighthouse-card img {
+  width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  border-radius: 16px;
+}
+
+.case-study-note {
+  max-width: 900px;
+
+  margin: 32px auto 0;
+
+  text-align: center;
+}
+
+.performance-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.metric-card {
+  text-align: center;
+}
+
+.metric-ring {
+  --score-angle: 0deg;
+
+  width: 140px;
+  aspect-ratio: 1;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      var(--primary) var(--score-angle),
+      var(--primary-soft) 0
+    );
+
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  box-shadow:
+    0 10px 40px var(--primary-glow-soft);
+}
+
+.metric-ring::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--border);
+}
+
+.metric-ring span {
+  position: relative;
+  z-index: 1;
+
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.metric-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.metric-ring {
+  transition: background 0.15s linear;
+}
+
+.metric-ring:hover {
+  transform: translateY(-4px);
+  transition: .3s ease;
+}
+
+.challenge-list {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.challenge-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.challenge-item span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.before-after-section {
+  margin: 5rem 0;
+}
+
+.before-after-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.before-card,
+.after-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,.05);
+}
+
+.before-card img,
+.after-card img {
+  width: 100%;
+  display: block;
+}
+
+.before-after-label {
+  display: inline-block;
+  margin: 1.5rem;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  background: var(--primary-soft);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .before-after-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .lighthouse-results {
+    grid-template-columns: 1fr;
+  }
+  .performance-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
