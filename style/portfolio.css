@@ -449,6 +449,21 @@
   visibility: visible;
 }
 
+.project-case-study {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.project-case-study:hover {
+  opacity: 0.7;
+}
+
 @media (max-width: 768px) {
 
   .project-top-row {
