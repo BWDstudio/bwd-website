@@ -122,14 +122,18 @@
           "name": "Artur Burzała"
         },
         "areaServed": {
-          "areaServed": "PL"
+          "@type": "Country",
+          "name": "Polska"
         },
         "image": "https://b-w-d.pl/assets/og-cover.webp",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+48605721600",
           "contactType": "customer service",
-          "areaServed": "PL",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Polska"
+          },
           "availableLanguage": "pl"
         },
         "sameAs": [
@@ -180,9 +184,28 @@
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
+        "@id": "https://b-w-d.pl/oferta.html#webpage",
         "name": "Oferta",
         "url": "https://b-w-d.pl/oferta.html",
-        "description": "Oferta tworzenia stron internetowych i landing page."
+        "description": "Oferta tworzenia stron internetowych i landing page.",
+        "inLanguage": "pl-PL",
+        "isPartOf": {
+          "@id": "https://b-w-d.pl/#website"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://b-w-d.pl/#website",
+        "name": "b-w-d",
+        "url": "https://b-w-d.pl",
+        "inLanguage": "pl-PL",
+        "publisher": {
+          "@id": "https://b-w-d.pl/#organization"
+        }
       }
     </script>
 

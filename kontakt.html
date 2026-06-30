@@ -101,9 +101,13 @@
       {
         "@context": "https://schema.org",
         "@type": "ContactPage",
+        "@id": "https://b-w-d.pl/kontakt.html#contactpage",
         "name": "Kontakt - Burzyk Web Design",
         "url": "https://b-w-d.pl/kontakt.html",
         "description": "Skontaktuj się i otrzymaj darmową wycenę strony internetowej.",
+        "isPartOf": {
+          "@id": "https://b-w-d.pl/#website"
+        },
         "mainEntity": {
           "@id": "https://b-w-d.pl/#organization"
         }
@@ -128,7 +132,10 @@
           "@type": "Person",
           "name": "Artur Burzała"
         },
-        "areaServed": "PL",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Polska"
+        },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+48605721600",
@@ -146,27 +153,14 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://b-w-d.pl/#organization",
-        "name": "Burzyk Web Design",
-        "alternateName": "b-w-d",
-        "url": "https://b-w-d.pl",
-        "logo": "https://b-w-d.pl/assets/logos/b-w-d.png",
-        "image": "https://b-w-d.pl/assets/og-cover.webp",
-        "sameAs": [
-          "https://www.linkedin.com/in/artur-burzala/",
-          "https://www.facebook.com/burzykwebdesign"
-        ]
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
         "@type": "WebPage",
+        "@id": "https://b-w-d.pl/kontakt.html#webpage",
         "name": "Kontakt",
         "url": "https://b-w-d.pl/kontakt.html",
-        "description": "Skontaktuj się z Burzyk Web Design i otrzymaj darmową wycenę strony internetowej."
+        "description": "Skontaktuj się z Burzyk Web Design i otrzymaj darmową wycenę strony internetowej.",
+        "isPartOf": {
+          "@id": "https://b-w-d.pl/#website"
+        }
       }
     </script>
 
@@ -188,6 +182,20 @@
             "item": "https://b-w-d.pl/kontakt.html"
           }
         ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://b-w-d.pl/#website",
+        "name": "b-w-d",
+        "url": "https://b-w-d.pl",
+        "inLanguage": "pl-PL",
+        "publisher": {
+          "@id": "https://b-w-d.pl/#organization"
+        }
       }
     </script>
   </head>

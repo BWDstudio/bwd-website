@@ -114,7 +114,10 @@
           "@type": "Person",
           "name": "Artur Burzała"
         },
-        "areaServed": "PL",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Polska"
+        },
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+48605721600",
@@ -122,23 +125,6 @@
           "areaServed": "PL",
           "availableLanguage": "pl"
         },
-        "sameAs": [
-          "https://www.linkedin.com/in/artur-burzala/",
-          "https://www.facebook.com/burzykwebdesign"
-        ]
-      }
-    </script>
-
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "@id": "https://b-w-d.pl/#organization",
-        "name": "Burzyk Web Design",
-        "alternateName": "b-w-d",
-        "url": "https://b-w-d.pl",
-        "logo": "https://b-w-d.pl/assets/logos/b-w-d.png",
-        "image": "https://b-w-d.pl/assets/og-cover.webp",
         "sameAs": [
           "https://www.linkedin.com/in/artur-burzala/",
           "https://www.facebook.com/burzykwebdesign"
@@ -177,9 +163,31 @@
       {
         "@context": "https://schema.org",
         "@type": "AboutPage",
+        "@id": "https://b-w-d.pl/o-mnie.html#aboutpage",
         "name": "O mnie",
         "url": "https://b-w-d.pl/o-mnie.html",
-        "description": "Poznaj Artura Burzałę, twórcę Burzyk Web Design."
+        "description": "Poznaj Artura Burzałę, twórcę Burzyk Web Design.",
+        "inLanguage": "pl-PL",
+        "isPartOf": {
+          "@id": "https://b-w-d.pl/#website"
+        },
+        "mainEntity": {
+          "@id": "https://b-w-d.pl/o-mnie.html#person"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://b-w-d.pl/#website",
+        "name": "b-w-d",
+        "url": "https://b-w-d.pl",
+        "inLanguage": "pl-PL",
+        "publisher": {
+          "@id": "https://b-w-d.pl/#organization"
+        }
       }
     </script>
 

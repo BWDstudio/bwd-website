@@ -130,8 +130,8 @@ function updateThemeIcon() {
 
   themeIcon.src =
     currentTheme === "dark"
-      ? "./assets/icons/sun.svg"
-      : "./assets/icons/moon.svg";
+      ? "/assets/icons/sun.svg"
+      : "/assets/icons/moon.svg";
 
   console.log("Icon:", themeIcon.src);
 }
